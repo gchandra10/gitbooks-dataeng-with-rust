@@ -1,0 +1,3 @@
+# Rust is used for...
+
+<figure><img src=".gitbook/assets/Rust_Programming_Categories.png" alt=""><figcaption><p>Src: Unknown</p></figcaption></figure>
