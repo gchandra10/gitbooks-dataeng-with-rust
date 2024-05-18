@@ -7,3 +7,4 @@ title = "Data Engineering with Rust"
 
 [build]
 create-missing = false
+build-dir="docs"
