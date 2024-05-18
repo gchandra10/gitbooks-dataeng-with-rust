@@ -1,6 +1,7 @@
 # Welcome
 
-[Front Page](frontpage.md)
+[Home](coverpage.md)
+[Disclaimer](disclaimer.md)
 
 ----
 * [Chapter 1](chapter1/README.md)
