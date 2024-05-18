@@ -1,0 +1,6 @@
+[book]
+authors = ["Ganesh Chandrasekaran"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Data Engineering with Rust"
