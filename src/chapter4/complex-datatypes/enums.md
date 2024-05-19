@@ -10,7 +10,7 @@ It Enumerates a finite number of options or types.
 * How enums are commonly used.
 * There are few standard enums you will use in Rust.
 
-```
+```rust
 #[derive(Debug)]
 enum TrafficLight{
     Red,
@@ -29,7 +29,7 @@ In addition to simply representing one of several types, we can have additional 
 
 Let's add Unnamed parameters in parenthesis.
 
-```
+```rust
 // Enum with additional data
 
 #[derive(Debug)]
@@ -46,7 +46,7 @@ fn main(){
 }
 ```
 
-```
+```rust
 // Separate the value and enum result
 
 #[derive(Debug)]
@@ -73,7 +73,7 @@ fn main(){
 
 ### Enums inside Enums
 
-```
+```rust
 #[derive(Debug)]
 enum TrafficLight {
     Red(bool),
@@ -107,7 +107,7 @@ fn main() {
 
 In Database world, commonly usages are
 
-```
+```rust
 enum FileFormat {
     CSV,
     Parquet,
@@ -131,8 +131,6 @@ enum DataTier {
     Cold,
     Archived,
 }
-
-
 ```
 
 ### Enum Implements
@@ -141,7 +139,7 @@ Similar to Struct, you can implement an interface in Enum.
 
 The Implement interface can be helpful when we need to implement some business logic tightly coupled with a discriminatory property of a given enum.
 
-```
+```rust
 // Modified from Source: Barron Stone Git Repository
 
 #[derive(Debug)]
@@ -194,7 +192,7 @@ Errors often occur when using a NULL.
 
 Rust does not have a traditional null value.
 
-```
+```rust
 // Sample Option Enum
 
 fn main() {
@@ -206,7 +204,7 @@ fn main() {
 }
 ```
 
-```
+```rust
 // Simple Division
 
 fn try_division(dividend: i32, divisor: i32) -> i32 {
@@ -234,7 +232,7 @@ This achieves the same concept as a traditional null value, but implementing it 
 
 It's commonly used and included in the prelude. That means additional use statements are needed.
 
-```
+```rust
 // Error Handling
 
 // An integer division that doesn't `panic!`
@@ -284,7 +282,7 @@ It contains the success value.
 
 Contains the error value
 
-```
+```rust
 // Simple Simple Interest Function
 
 fn si(p:f32,n:f32,r:f32) -> f32 {
@@ -304,7 +302,7 @@ fn main(){
 
 **How to handle if the parameter is Zero?**
 
-```
+```rust
 // SI with conditions
 
 fn si(p:f32,n:f32,r:f32) -> f32 {
@@ -342,7 +340,7 @@ How does Result enum help in this case?
 
 
 
-```
+```rust
 // using Result
 
 fn si(p: f32, n: f32, r: f32) -> Result<f32, String> {
@@ -375,7 +373,7 @@ fn main() {
 
 **Difference when using Result and Option Example**
 
-```
+```rust
 // using Result
 
 fn si_using_result(p: f32, n: f32, r: f32) -> Result<f32, String> {
@@ -439,9 +437,8 @@ If its Ok, return the result
 
 If its Err, return the error
 
-```
-// 
 
+```rust
 fn calc_si(p: f32, n: f32, r: f32) -> Result<f32, String> {
     if p <= 0. {
         return Err("Principal cannot be less or equal to zero".to_string());
@@ -473,11 +470,10 @@ fn main() {
 }
 ```
 
-
-
 Skip the intermediate print\_si function
 
-```
+
+```rust
 
 fn si(p: f32, n: f32, r: f32) -> Result<f32, String> {
     if p <= 0. {
@@ -504,14 +500,13 @@ fn main() -> Result<(), String> {
     println!("si = {result}");
     Ok(())
 }
-
 ```
 
 
 
 ### Another Simple Example
 
-```
+```rust
 // Simple Parse Example
 
 fn parse_str(input: &str) -> Result<i32, std::num::ParseIntError> {
@@ -527,6 +522,3 @@ fn main() {
     }
 }
 ```
-
-
-

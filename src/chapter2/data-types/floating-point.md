@@ -7,7 +7,7 @@ Floats are numbers with decimal points.
 
 It doesn't support 16 or 128
 
-```
+```rust
  fn main() {
     //explicitly define a float type
     let f1:f32 = 32.9;
@@ -27,7 +27,7 @@ It doesn't support 16 or 128
 
 Values are the same, but they are not equal.&#x20;
 
-```
+```rust
 // Adding f32 + f64
 
 fn main() {
@@ -41,7 +41,7 @@ fn main() {
 
 So how to fix it?
 
-```
+```rust
 // Adding f32 + f64 the right way
 
 fn main() {
@@ -55,7 +55,7 @@ fn main() {
 
 **If not declared, the Default type is f64**
 
-```
+```rust
 // What is size of my_other_float variable?
 // Adding f32 with f64 will it work or fail?
 // Rust is smart, 

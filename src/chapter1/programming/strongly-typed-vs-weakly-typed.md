@@ -14,7 +14,7 @@ a = a + "dot";   #type-error, string and int cannot be concatenated.
 print(a);
 ```
 
-<figure><img src="../.gitbook/assets/strongly_typed.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/strongly_typed.png" alt=""><figcaption></figcaption></figure>
 
 **Weakly typed** languages make conversions between unrelated types implicitly.
 
@@ -33,4 +33,4 @@ a = a + "dot";
 console.log(a);
 ```
 
-<figure><img src="../.gitbook/assets/weakly_typed.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/weakly_typed.png" alt=""><figcaption></figcaption></figure>

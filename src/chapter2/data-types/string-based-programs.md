@@ -8,7 +8,7 @@ what is the use of collect()
 
 ### Concatenation
 
-```
+```rust
 // concatenation
 
 fn main() {
@@ -21,7 +21,7 @@ fn main() {
 
 ### String Reverse
 
-```
+```rust
 // Reverse String
 
 fn main() {
@@ -29,12 +29,11 @@ fn main() {
     let t: String = s.chars().rev().collect();
     println!("{}", t);
 }
-
 ```
 
 ### Check Palindrome
 
-```
+```rust
 // Palindrome
 
 fn main() {
@@ -52,7 +51,7 @@ fn main() {
 
 ### String Padding
 
-```
+```rust
  // String Padding
 
 fn main() {

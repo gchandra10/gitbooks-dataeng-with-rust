@@ -4,7 +4,7 @@ _Slices_ let you reference a contiguous sequence of elements in a collection rat
 
 A _string slice_ is a reference to part of a `String`, and it looks like this:
 
-```
+```rust
 // String Slicing
 
 fn main() {
@@ -25,8 +25,7 @@ fn main() {
 
 ### Example 2
 
-```
-
+```rust
 fn first_word(s: &String) -> usize {
     let bytes = s.as_bytes();
 
@@ -46,7 +45,7 @@ fn main() {
 }
 ```
 
-```
+```rust
 // return value
 
 fn first_word(s: &String) -> &str {
@@ -66,5 +65,4 @@ fn main() {
     let word = first_word(&s); // word will get the value 5
     println!("{}",word);
 }
-
 ```

@@ -2,19 +2,15 @@
 
 FS Module is not part of the default prelude.
 
-**Rust Prelude**
+## Rust Prelude
 
 The prelude is the list of things that Rust automatically imports into every Rust program. It’s kept as small as possible and is focused on things, particularly traits, which are used in almost every single Rust program.
 
 The Data file should be in the same level src folder.
 
+<figure><img src="../assets/file_handling.png" alt=""><figcaption><p>data.txt should be at the same level src folder</p></figcaption></figure>
 
-
-<figure><img src=".gitbook/assets/file_handling.png" alt=""><figcaption><p>data.txt should be at the same level src folder</p></figcaption></figure>
-
-###
-
-```
+```rust
 // data.txt
 
 Rachel
@@ -25,11 +21,10 @@ Joey
 Ross
 ```
 
-### Read File
+## Read File
 
-```
+```rust
 // main.rs
-
 use std::fs;
 
 fn main(){
@@ -38,9 +33,9 @@ fn main(){
 }
 ```
 
-### Read Line by Line
+## Read Line by Line
 
-```
+```rust
 use std::fs;
 
 fn main(){
@@ -55,7 +50,7 @@ Rust can also read nontext files (such as images and  binaries)&#x20;
 
 It reads as a vector of u8.
 
-```
+```rust
 // Read as vector of u8
 
 use std::fs;
@@ -66,9 +61,9 @@ fn main(){
 }
 ```
 
-### Write File
+## Write File
 
-```
+```rust
 // Write a simple file
 
 use std::fs;
@@ -82,7 +77,7 @@ fn main() {
 }
 ```
 
-### Points to remember
+## Points to remember
 
 Simple to use
 
@@ -90,9 +85,9 @@ Will replace the contents of an existing file
 
 Writes entire contents of the file.
 
-**How to append**&#x20;
+**How to append**
 
-```
+```rust
 use std::fs;
 use std::io::prelude::*;
 
@@ -111,9 +106,9 @@ fn main() {
 
 Write fn doesn't care about datatype. It thinks data is a series of bytes and it expects the value to be an array of u8 values.
 
-### Simple Find Command Line simulator
+## Simple Find Command Line simulator
 
-```
+```rust
 // friends.txt
 
 Rachel
@@ -124,7 +119,7 @@ Joey
 Ross
 ```
 
-```
+```rust
 //cargo run friends.txt Ross
 
 use std::env;
@@ -156,6 +151,3 @@ Good resource if you want to recreate standard Linux commands using RUST
 [https://doc.rust-lang.org/rust-by-example/std\_misc/fs.html](https://doc.rust-lang.org/rust-by-example/std\_misc/fs.html)
 
 You will come across few new notations like OK, Err we will read about them in the coming weeks.
-
-
-

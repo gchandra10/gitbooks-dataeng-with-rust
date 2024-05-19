@@ -10,7 +10,7 @@ ID\_1
 
 ID\_2
 
-```
+```rust
 const ID_1: i32 = 4; // define a global constant variable
 
 fn main() {

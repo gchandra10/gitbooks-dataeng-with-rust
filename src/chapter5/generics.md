@@ -8,7 +8,7 @@ Generics are a way to make a function or a type work for multiple types to avoid
 * Generics are a zero-cost abstraction.&#x20;
 * Make Programming easier without reducing runtime performance.
 
-```
+```rust
 // Some code
 
 use std::fmt::Debug;
@@ -73,7 +73,7 @@ fn print_another<T: Debug + Display, U:Debug + Display>(p1: T, p2: U) -> () {
 
 ### Generics with Struct
 
-```
+```rust
 // Generics with Struct
 
 struct Sample<T, U, V> {
@@ -95,7 +95,4 @@ fn main() {
     println!("B: {}", var2.b);
     println!("C: {}", var2.c);
 }
-
-
 ```
-

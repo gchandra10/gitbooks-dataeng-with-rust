@@ -1,7 +1,3 @@
----
-description: Java Script Object Notation
----
-
 # JSON
 
 The flexible way to store & share data across systems. It's a text file with curly braces & key-value pairs { }
@@ -12,13 +8,13 @@ Simplest JSON format
 {"id": "1","name":"Rachel"}
 ```
 
-### Properties
+## Properties
 
 Language Independent.
 
 Self-describing and easy to understand.
 
-### Basic Rules
+## Basic Rules
 
 Curly braces to hold the objects.
 
@@ -30,7 +26,7 @@ The use of double quotes is necessary.
 
 Square brackets \[ ] hold an array of data.
 
-### JSON Values
+## JSON Values
 
 ```
 String  {"name":"Rachel"}
@@ -50,7 +46,7 @@ Array   {
 NULL    {"id":null}
 ```
 
-### Sample JSON Document
+## Sample JSON Document
 
 ```
 {
@@ -83,7 +79,7 @@ NULL    {"id":null}
 }
 ```
 
-### JSON Best Practices
+## JSON Best Practices
 
 **No Hyphen in your Keys.**
 
@@ -108,18 +104,14 @@ L**owercase Okay**
 ```
 {"firstName":"Rachel","lastName":"Green"} is the best. ✓
 ```
-
-
-
-### JSON & RUST
+## JSON & RUST
 
 * The **Deserialize** trait is required to parse (that is, read) JSON strings into this Struct.
 * The **Serialize** trait is required to format (that is, write) this Struct into a JSON string.
 * The **Debug** trait is for printing a Struct on a debug trace.
 
 
-
-```
+```rust
 // main.rs
 
 use serde_derive::{Deserialize, Serialize};
@@ -157,15 +149,11 @@ fn main()  {
         println!("{} - {}",friends.characters[index].fName,friends.characters[index].lName);
     }
 }
-
-
 ```
 
-save  the above json document as sample.json
+Save the above json document as sample.json
 
-<figure><img src=".gitbook/assets/json_sample.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../assets/json_sample.png" alt=""><figcaption></figcaption></figure>
 
 ```
 // cargo.toml
@@ -174,12 +162,11 @@ save  the above json document as sample.json
 serde = "1.0.147"
 serde_derive = "1.0.147"
 serde_json = "1.0.87"
-
 ```
 
-### Convert Struct to JSON
+## Convert Struct to JSON
 
-```
+```rust
 use serde_derive::{Serialize};
 
 #[derive(Serialize)]

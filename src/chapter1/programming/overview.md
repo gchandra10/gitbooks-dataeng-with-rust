@@ -23,7 +23,7 @@ Feeling empowered.
 
 
 
-<figure><img src="../.gitbook/assets/swiss_army_programming_knife.png" alt=""><figcaption><p><em>Img Src: Brian Johnson (Quora.com)</em></p></figcaption></figure>
+<figure><img src="../../assets/swiss_army_programming_knife.png" alt=""><figcaption><p><em>Img Src: Brian Johnson (Quora.com)</em></p></figcaption></figure>
 
 
 

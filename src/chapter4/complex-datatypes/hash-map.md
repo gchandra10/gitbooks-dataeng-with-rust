@@ -18,7 +18,7 @@ Map / Dictionary / Associative Array
 * Each key can only have one value associated with it at a time.
 * No duplicate keys.
 
-```
+```rust
 // HashMap
 
 use std::collections::HashMap;

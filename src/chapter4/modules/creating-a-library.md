@@ -10,9 +10,9 @@ To create a new library include --lib when creating a new cargo package&#x20;
 
 cargo new newlib --lib
 
-<figure><img src="../.gitbook/assets/library_module.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/library_module.png" alt=""><figcaption></figcaption></figure>
 
-```
+```rust
 // departments.rs
 
 pub mod dept {

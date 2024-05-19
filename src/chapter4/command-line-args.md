@@ -18,7 +18,7 @@ Returns an iterator over arguments passed to the program.
 
 The first argument is traditionally the executable path.
 
-```
+```rust
 // command line arguments
 
 use std::env;
@@ -48,7 +48,7 @@ dbg!(env::args());
 
 **Some**
 
-```
+```rust
 use std::env;
 
 fn main() {

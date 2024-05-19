@@ -4,7 +4,7 @@ The value assigned to a char variable is enclosed in a single quote(`''`) .
 
 **Unlike some other languages, a character in Rust takes up 4 bytes rather than a single byte**. It does so because it can store a lot more than just an ASCII value like emojis, Korean, Chinese, and Japanese characters.
 
-```
+```rust
 fn main() { 
     // implicitly & explicitly define
     let char_2:char = 'a';
@@ -20,7 +20,7 @@ Used when the value of the string is known at compile time. Literals are set of 
 
 String literals are stored in the Stack portion of the memory so retrieval is fast.
 
-```
+```rust
 fn main() {
     // explicitly define 
     let str_1:&str = "Rust Programming";
@@ -43,7 +43,7 @@ String::new() - Creates an empty string.
 
 String::from() - Default value passed as parameter.
 
-```
+```rust
 fn main(){
    let empty_string = String::new();
    println!("length is {}",empty_string.len());
@@ -57,7 +57,7 @@ String Operations
 
 variable.push() - to push a single character
 
-```
+```rust
 // Push Single Character
 
 fn main(){
@@ -70,7 +70,7 @@ fn main(){
 
 variable.push\_str() - to push a set of characters
 
-```
+```rust
 // Push a string
 
 fn main(){
@@ -83,7 +83,7 @@ fn main(){
 
 variable.replace("","")
 
-```
+```rust
 fn main(){
    let name1 = String::from("Hello!");
    let name2 = name1.replace("Hello","Howdy");    //find and replace
@@ -93,8 +93,7 @@ fn main(){
 
 **Convert String Literal to String Object (to\_string())**
 
-```
-
+```rust
 fn main(){
    let name1 = "Hello!".to_string();              //String object
    let name2 = name1.replace("Hello","Howdy");    //find and replace
@@ -104,7 +103,7 @@ fn main(){
 
 **Convert String Object to String Literal (as\_str())**
 
-```
+```rust
 fn main() {
     let name1 = String::from("hello");
     let name2 = name1.as_str();
@@ -114,7 +113,7 @@ fn main() {
 
 ### Script to find the data type
 
-```
+```rust
 fn print_type_of<T>(_: &T) {
     println!("{}", std::any::type_name::<T>())
 }

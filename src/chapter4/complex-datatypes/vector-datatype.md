@@ -1,10 +1,10 @@
 # Vector Datatype
 
-**Dynamic Arrays**&#x20;
+## Dynamic Arrays
 
 Unlike Arrays no need to initialize the size of the array.
 
-```
+```rust
 // Vector
 
 fn main(){
@@ -18,9 +18,9 @@ fn main(){
 }
 ```
 
-**Vector with Datatype**
+## Vector with Datatype
 
-```
+```rust
 // This vector is initialized with i32 datatype.
 // This code will result in error.
 
@@ -38,7 +38,7 @@ fn main(){
 
 **What about this?**
 
-```
+```rust
 // &str
 
 fn main(){
@@ -52,7 +52,7 @@ fn main(){
 }
 ```
 
-```
+```rust
 // String
 
 fn main(){
@@ -65,9 +65,9 @@ fn main(){
 }
 ```
 
-### Vec Macro for initializing
+## Vec Macro for initializing
 
-```
+```rust
 // Vec macro
 
 fn main(){
@@ -83,14 +83,12 @@ fn main(){
     println!("{:?}",two);
     println!("{:?}",three);
     println!("{:?}",four);
-    
-    
 }
 ```
 
-### Capacity() vs Len()
+## Capacity() vs Len()
 
-```
+```rust
 // capacity() number of elements the vector can hold (without reallocating memory)
 // len() number of elements
 
@@ -113,9 +111,9 @@ fn main(){
 }
 ```
 
-### Convert Array to Vector
+## Convert Array to Vector
 
-```
+```rust
 fn main(){
     let arr1 = [1,2,3,4];
     let my_vec:Vec<i8> = arr1.into();
@@ -134,13 +132,12 @@ fn print_type_of<T>(_: &T) {
 }
 ```
 
-### Sort the Vector
+## Sort the Vector
 
-```
+```rust
 fn main() {
     let mut vec = vec![14, 33, 12, 56, 3223, 2211, 9122, 3, 299, 67];
     vec.sort();
     println!("Sorted: {:?}", vec)
 }
 ```
-

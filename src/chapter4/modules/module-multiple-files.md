@@ -4,7 +4,7 @@ cargo new moddemo2
 
 create files as given below
 
-<figure><img src="../.gitbook/assets/module_multile_files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/module_multile_files.png" alt=""><figcaption></figcaption></figure>
 
 ```
 // departments.rs

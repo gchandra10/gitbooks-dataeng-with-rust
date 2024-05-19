@@ -8,9 +8,7 @@ When working with Structs, we have enabled Debug and Display traits.&#x20;
 
 Rust supports defining and using custom traits.
 
-
-
-```
+```rust
 // Display Struct without Trait
 
 #[derive(Debug)]
@@ -46,7 +44,7 @@ fn main(){
 
 ```
 
-```
+```rust
 // Implementing the same using Traits
 
 struct Show {
@@ -105,7 +103,7 @@ In some cases, it's useful to have a default implementation for one or more of t
 
 Especially when you have a trait with many methods, you can implement only some of them for every datatype.
 
-```
+```rust
 // Default Trait
 
 struct Show {
@@ -179,17 +177,17 @@ If you need something specific, you'll need to implement the methods yourself.
 
 List of commonly used derivable traits
 
-* Eq&#x20;
-* PartialEq&#x20;
-* Ord&#x20;
-* PartialOrd&#x20;
-* Clone&#x20;
-* Copy&#x20;
-* Hash&#x20;
-* Default&#x20;
+* Eq
+* PartialEq
+* Ord
+* PartialOrd
+* Clone
+* Copy
+* Hash
+* Default
 * Debug
 
-```
+```rust
 // Comparison
 
 #[derive(PartialEq,PartialOrd)]
@@ -214,12 +212,11 @@ fn main(){
 	println!("{}", friends > bbt);	
 
 }
-
 ```
 
 What if we need to have custom comparison on specific items
 
-```
+```rust
 // Custom Comparison
 
 #[allow(dead_code)]
@@ -258,12 +255,11 @@ fn main() {
 
     println!("Custom Comparison {}", friends.eq(&bbt));
 }
-
 ```
 
 ### Another Example with Numerical values
 
-```
+```rust
 //declare a structure
 
 struct Circle {
@@ -320,6 +316,4 @@ fn main() {
     println!("Area of Rectangle:{}", r.shape_area());
     println!("Area of Rectangle:{}", s.shape_area());
 }
-
 ```
-

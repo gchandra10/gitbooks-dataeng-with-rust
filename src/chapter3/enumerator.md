@@ -1,7 +1,5 @@
 # Enumerator
 
-
-
 Here are some use cases:
 
 1. **Index Tracking**: When you need to know the index of an element while iterating, `enumerate()` is handy.
@@ -14,7 +12,7 @@ The enumerator turns an iterator over elements.
 
 Using multiple conditions and variables, a loop condition can also be more complex. For example, the for loop can be tracked using enumerate.
 
-```
+```rust
 fn main() {
     for (i, j) in (100..200).enumerate() {
         println!("loop has executed {} times. j = {}", i, j);
@@ -22,7 +20,7 @@ fn main() {
 }
 ```
 
-```
+```rust
 // _ is a generic placeholder.
 
 fn main()  

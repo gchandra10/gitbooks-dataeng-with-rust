@@ -1,13 +1,12 @@
 # Big O Notation
 
-### Algorithmic Complexity
+## Algorithmic Complexity
 
 When analyzing an algorithm,
 
 **Time Complexity**: The time it takes to execute the code.
 
 **Space Complexity**: The space taken in the memory to execute the code.
-
 
 
 Following Notations are used to represent Algorithmic Complexity. Big O is what everybody is interested in.
@@ -18,9 +17,7 @@ Big - Theta = Average Case
 
 **BIG O = Worst Case**
 
-
-
-<figure><img src="../.gitbook/assets/00_common_complexities.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/00_common_complexities.png" alt=""><figcaption></figcaption></figure>
 
 Will try to use general algorithms not any specific programming syntaxes.
 
@@ -43,7 +40,7 @@ Each line is of complexity O(1). Because its handling only one item.
 
 So we remove 4 and the complexity is O(1)
 
-### **Linear Complexity O(N)**
+## Linear Complexity O(N)
 
 In this case the time and size changes based on number of input values.
 
@@ -60,7 +57,7 @@ if N = 10 it will be print faster, if N = 1Million the time taken will be linear
 
 These kinds of Linear changes is called  O(N)
 
-### **Quadratic Complexity**
+## Quadratic Complexity
 
 ```
 // Quadratic Complexity
@@ -109,7 +106,7 @@ for (k = 0; k < N; k++) {
 }
 ```
 
-### Exponential Complexity
+## Exponential Complexity
 
 O(2 power N)
 
@@ -141,7 +138,7 @@ For input = 4, number of iteration is 8&#x20;
                                                     Fibonacci(0)         Fibonnaci(1)
 ```
 
-### Logarithmic Complexity  O(Log N)
+## Logarithmic Complexity  O(Log N)
 
 Increase in number of input is exponential but time and space growth is Linear.
 
@@ -158,7 +155,7 @@ Pick mid point, search either left or right.
 
 
 
-<figure><img src="../.gitbook/assets/big-o-complexity-chart.png" alt=""><figcaption><p>bigocheatsheet.com</p></figcaption></figure>
+<figure><img src="../../assets/big-o-complexity-chart.png" alt=""><figcaption><p>bigocheatsheet.com</p></figcaption></figure>
 
 
 

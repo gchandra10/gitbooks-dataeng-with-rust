@@ -16,7 +16,7 @@ Rust is known for its safety and performance, which makes it great for database 
 \
 \------
 
-### Read Environment Variables
+## Read Environment Variables
 
 ```
 // SET Environment Variables
@@ -39,11 +39,9 @@ cargo.toml
 
 ```
 postgres="0.19.4"
-
 ```
 
-```
-
+```rust
 use postgres::{Client, Error, NoTls};
 
 fn main() -> Result<(), Error> {
@@ -146,10 +144,3 @@ fn main() -> Result<(), Error> {
 }
 
 ```
-
-
-
-
-
-
-

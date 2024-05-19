@@ -1,8 +1,8 @@
 # Nice to Know
 
-* [big-o-notation](big-o-notation.md)
-* [important-concepts](important-concepts.md)
-* [cargo-publish](cargo-publish.md)
-* [cargo-watch](cargo-watch.md)
-* [cargo-audit](cargo-audit.md)
-* [cargo-profiles](cargo-profiles.md)
+* [Important Concepts](important-concepts.md)
+* [Big-O-Notation](big-o-notation.md)
+* [Cargo Publish](cargo-publish.md)
+* [Cargo Profiles](cargo-profiles.md)
+* [Cargo Watch](cargo-watch.md)
+* [Cargo Audit](cargo-audit.md)

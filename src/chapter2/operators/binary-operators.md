@@ -1,6 +1,6 @@
 # Binary Operators
 
-**Arithmetic Operators**
+## Arithmetic Operators
 
 \+
 
@@ -12,9 +12,7 @@
 
 % (Modulus)
 
-```
-// Some code
-
+```rust
 fn main() {
     let a = 4;
     let b = 3;
@@ -28,15 +26,13 @@ fn main() {
 }
 ```
 
-**Logical Operators**
+## Logical Operators
 
 && (AND Operator)
 
 || (OR Operator)
 
 ! (Not Operator)
-
-
 
 AND and OR are known as **LAZY Boolean expressions**.&#x20;
 
@@ -46,9 +42,7 @@ In the case of AND, if LHS is False, then there is no need to evaluate the RHS.
 
 In the case of OR, if LHS is True, then there is no need to evaluate the RHS.
 
-```
-// Some code
-
+```rust
 fn main() {
   let a = true;
   let b = false;
@@ -59,13 +53,11 @@ fn main() {
 }
 ```
 
-**Comparison Operator**
+## Comparison Operator
 
 **>, <, <=, >=, ==, !=**
 
-```
-// Some code
-
+```rust
 fn main() {
     let a = 2;
     let b = 3;
@@ -77,10 +69,9 @@ fn main() {
     println!("a == b:{}", a == b);
     println!("a != b:{}", a != b);
 }
-
 ```
 
-**Bitwise Operator**
+# Bitwise Operator
 
 Bitwise operators work on the binary representation of numbers. They're often used for:
 
@@ -96,7 +87,7 @@ mask = 15  # 0000 1111 in binary
 result = x & mask  # 0000 1001, or 9 in decimal
 ```
 
-**Common use cases with Rust**
+## Common use cases with Rust
 
 1. **Memory Management**: Manipulating individual bits for custom allocators.
 2. **File I/O**: Reading and writing binary files, especially in low-level systems programming.
@@ -104,7 +95,7 @@ result = x & mask  # 0000 1001, or 9 in decimal
 4. **Cryptography**: Implementing cryptographic algorithms often involves bitwise manipulation.
 5. **Hardware Interaction**: Directly interacting with hardware often requires setting specific bits.
 
-```
+```rust
 fn main() {
     let mut flags = 0b0000_0101;
     let mask = 0b0000_1000;
@@ -125,13 +116,4 @@ fn main() {
 
 \>> - Right Shift Operator
 
-<figure><img src="../.gitbook/assets/05_bitwise_operator.png" alt=""><figcaption><p>Src: Educative.io</p></figcaption></figure>
-
-
-
-
-
-
-
-
-
+<figure><img src="../../assets/05_bitwise_operator.png" alt=""><figcaption><p>Src: Educative.io</p></figcaption></figure>

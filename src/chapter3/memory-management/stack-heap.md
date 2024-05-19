@@ -1,6 +1,6 @@
 # Stack - Heap
 
-<figure><img src="../.gitbook/assets/learn_arduino_Stack_Operation.gif" alt=""><figcaption><p>Src: Adafruit.com</p></figcaption></figure>
+<figure><img src="../../assets/learn_arduino_Stack_Operation.gif" alt=""><figcaption><p>Src: Adafruit.com</p></figcaption></figure>
 
 We will learn the concept of memory management and how Rust can guarantee memory safety without a Garbage collector.
 
@@ -22,7 +22,7 @@ This text's bytes are only ever read from one place and therefore can be stored 
 
 **String Literals**
 
-<figure><img src="../.gitbook/assets/stack_static_global_memory.jpg" alt=""><figcaption><p>Img Src: OpenGenus</p></figcaption></figure>
+<figure><img src="../../assets/stack_static_global_memory.jpg" alt=""><figcaption><p>Img Src: OpenGenus</p></figcaption></figure>
 
 ### **Stack**
 
@@ -46,7 +46,7 @@ Automatic cleanup, when the function returns.
 
 Example: Courtesy mit.edu
 
-```
+```rust
 fn foo() {
     let y = 5;
     let z = 100;
@@ -108,7 +108,7 @@ For data that is created while the application is running. Data in this region m
 
 Example: Vector, String
 
-```
+```rust
 // Some code
 
 fn main(){
@@ -117,9 +117,9 @@ fn main(){
 }
 ```
 
-<figure><img src="../.gitbook/assets/string_heap_memory.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/string_heap_memory.png" alt=""><figcaption></figcaption></figure>
 
-```
+```rust
 // Move Trait (Heap)
 
 fn main() {
@@ -142,7 +142,7 @@ fn main() {
 
 Example: pdf (stack) - printed book (heap)
 
-```
+```rust
 // Copy Trait (Stack - because of using String Literal)
 
 fn main() {

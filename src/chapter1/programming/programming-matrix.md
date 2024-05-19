@@ -4,7 +4,7 @@
 
 
 
-<figure><img src="../.gitbook/assets/programming_matrix.png" alt=""><figcaption><p>Image Source : Mayank Bhatnagar</p></figcaption></figure>
+<figure><img src="../../assets/programming_matrix.png" alt=""><figcaption><p>Image Source : Mayank Bhatnagar</p></figcaption></figure>
 
 
 

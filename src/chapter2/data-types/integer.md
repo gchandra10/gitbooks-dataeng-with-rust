@@ -20,7 +20,7 @@ The integer type in which the particular size depends on the underlying machine 
 
 
 
-```
+```rust
 // see the smallest and biggest numbers,you can use MIN and MAX 
 // after the name of the type
 
@@ -37,12 +37,11 @@ fn main() {
     println!("The smallest u128 is {} and the biggest u128 is {}.", u128::MIN, u128::MAX);
 
 }
-
 ```
 
 ### Explicit Declaration
 
-```
+```rust
 fn main() {
     //explicitly define an integer
     let a:i32 = 24;
@@ -60,28 +59,21 @@ fn main() {
 
 ### Alternate Way to Declare
 
-```
+```rust
 // Alternate Way
 
 fn main() {
     let small_number: u8 = 10;
-    
     let small_number1 = 10u8; // 10u8 = 10 of type u8 (no space inbetween 10 and u8)
-    
     let big_number = 100000000i32;
-    
     let big_number1 = 100_000_000i32; // adds clarity to numbers
- 
      let big_number2 = 100_____000________000i32;  //to demonstrate multiple ___
-    
 }
 ```
 
-
-
 ### Type Inference
 
-```
+```rust
 fn main() {
     //implicitly define an integer
     let a = 21; 
@@ -99,9 +91,8 @@ fn main() {
 
 **When not declared, the Default integer type inferred by Rust is i32**
 
-```
+```rust
 // 
-
 fn print_type_of<T>(_: &T) {
     println!("{}", std::any::type_name::<T>())
 }

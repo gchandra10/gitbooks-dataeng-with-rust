@@ -1,6 +1,6 @@
 # if..elseif..else construct
 
-```
+```rust
 fn main() {
       //define a variable 
       let learn_language="Rust";
@@ -19,9 +19,9 @@ fn main() {
 }
 ```
 
-### Nested IF
+## Nested IF
 
-```
+```rust
 // Nested If Block
 
 fn main() {
@@ -40,9 +40,9 @@ fn main() {
 }
 ```
 
-### If Expression
+## If Expression
 
-```
+```rust
 // If Expression
 
 fn main() {
@@ -54,13 +54,11 @@ fn main() {
 }
 ```
 
-
-
-### Q & A
+## Q & A
 
 **Q1: What is the output of the following?**
 
-```
+```rust
 // Qn 1
 
 fn main() {
@@ -77,7 +75,7 @@ fn main() {
 
 **Q2: Which `If` block is executed?**
 
-```
+```rust
 fn main() {
    let age=23; 
    let play=true; 
@@ -105,7 +103,7 @@ fn main() {
 
 **Q3: What is the output of the following code?**
 
-```
+```rust
 fn main() {
   let age = 23; 
   let play = true; 
@@ -130,6 +128,3 @@ fn main() {
   }
  }
 ```
-
-
-

@@ -10,7 +10,7 @@ The code in mod.rs is **the content of that module.** All other files in the fol
 
 create the following directory structure
 
-<figure><img src="../.gitbook/assets/module_multiple_folders.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/module_multiple_folders.png" alt=""><figcaption></figcaption></figure>
 
 ```
 // main.rs

@@ -11,7 +11,7 @@ Unlike a Tuple, you will assign a name to each value to indicate what it means. 
 - Each field has a name and a type.
 ```
 
-```
+```rust
 struct Students {
 	id:i32,
 	name:String,
@@ -36,7 +36,7 @@ Structs are usually declared outside the main function. If the scope is local, i
 
 #### Struct - Stack or Heap?
 
-```
+```rust
 // Struct Stack or Heap
 
 struct Students {
@@ -94,8 +94,7 @@ struct Students{id:i32}
 
 #### Struct inside Vector
 
-```
-
+```rust
 #[derive(Debug, Clone)]
 struct Students {
     id: i32,
@@ -132,7 +131,6 @@ fn main() {
          println!("{},{},{}", v.id, v.name, v.course);
     }
 }
-
 ```
 
 ### Struct implementation
@@ -141,11 +139,9 @@ The implementation block has the keyword "impl" followed by the same name as Str
 
 Methods: methods are similar to functions with "fn" keyword. They can have parameters and return values. The only difference is, they are defined within the context of a struct and their first parameter is always self.
 
-&#x20;Let's see an example
+Let's see an example
 
-```
-// 
-
+```rust
 #[derive(Debug, Clone)]
 struct Students {
     id: i32,
@@ -188,8 +184,7 @@ fn main() {
 
 Functions inside the impl block that do not take "self" as a parameter.&#x20;
 
-```
-// Some code
+```rust
 
 #[derive(Debug, Clone)]
 struct Students {
@@ -236,7 +231,7 @@ fn main() {
 
 #### Mutable Implementation
 
-```
+```rust
 // Using Mutable & Borrow operator
 
 #[derive(Debug, Clone)]
@@ -296,7 +291,7 @@ fn main() {
 
 Tuple Structs - Similar to Classic but fields have no names.
 
-```
+```rust
 // Tuple Struct
 
 struct Coordinates(u32, u32);
@@ -311,13 +306,5 @@ fn main() {
     let Coordinates(a,b) = xy;
     println!("Values of variables a & b {},{}", a, b);
 }
-
-
 ```
-
-
-
-
-
-
 

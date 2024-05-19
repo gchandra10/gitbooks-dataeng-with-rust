@@ -8,21 +8,15 @@ The Box type allows you to store the data on the heap in a safe and efficient wa
 
 One reason why using a **Box might be beneficial** is that it can **help you avoid stack overflows**. The stack is a fixed-size data structure, so if you try to store a large data structure on the stack, it can overflow and cause your program to crash.&#x20;
 
-
-
-
-
-<figure><img src=".gitbook/assets/toy_box.png" alt=""><figcaption><p>Toy Box</p></figcaption></figure>
+<figure><img src="../assets/toy_box.png" alt=""><figcaption><p>Toy Box</p></figcaption></figure>
 
 What do you think about using a Toy Box?
-
-
 
 Rust has a Smart Pointer called Box\<T>. It allows developers to store data on the heap rather than the stack. What remains on the stack is the pointer to the heap data.
 
 Boxes don't have performance overhead other than storing their data on the heap instead of on the stack.
 
-```
+```rust
 // Silly use case for Box
 
 fn main() {
@@ -32,9 +26,7 @@ fn main() {
 }
 ```
 
-
-
-```
+```rust
 fn main() {
 
     let large_array: [i32; 5] = [1,2,3,4,5];
@@ -49,11 +41,7 @@ fn main() {
 
 ```
 
-
-
-
-
-```
+```rust
 // Better use case for using Box
 
 use std::mem;
@@ -93,8 +81,7 @@ fn main() {
 ```
 
 
-
-```
+```rust
 // Stack to Heap
 
 #[allow(dead_code)]
@@ -138,12 +125,11 @@ fn main() {
     println!("Heap b.fname pointing to : {:p} \nHeap Location b.fname {:p}",&b.fname,b.fname.as_ptr());
     println!("Heap b.lname pointing to : {:p} \nHeap Location b.lname {:p}",&b.lname,b.lname.as_ptr());
 }
-
 ```
 
-Linked List Example
+## Linked List Example
 
-```
+```rust
 // Linked List
 
 Here is an example of a linked list that could be stored on the stack in Rust:

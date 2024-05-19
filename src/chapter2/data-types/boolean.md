@@ -1,10 +1,12 @@
 # Boolean
 
-true
-
-false
-
 ```
+true
+false
+```
+
+
+```rust
 fn main() {
     //explicitly define a bool
     let is_bool:bool = true;
@@ -17,12 +19,11 @@ fn main() {
     println!("b: {}", b);
 
 }
-
 ```
 
 **Expression result**
 
-```
+```rust
 fn main() {
     // get a value from an expression
     let c = 10 > 2;

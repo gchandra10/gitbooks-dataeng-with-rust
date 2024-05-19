@@ -2,7 +2,7 @@
 
 Tuples are **heterogeneous sequences of elements**, meaning, each element in a tuple can have a different data type. Just like arrays, tuples are of a fixed length.
 
-![](../.gitbook/assets/04\_tuple.png)
+![](../../assets/04\_tuple.png)
 
 **Define a Tuple**
 
@@ -10,13 +10,13 @@ A tuple can be defined by writing `let` followed by the name of the tuple and th
 
 **Implicit Inference**
 
-![](../.gitbook/assets/04\_tuple\_simple.png)
+![](../../assets/04\_tuple\_simple.png)
 
 **Explicit Inference**
 
-![](../.gitbook/assets/04\_tuple\_w\_datatype.png)
+![](../../assets/04\_tuple\_w\_datatype.png)
 
-```
+```rust
 #[allow(unused_variables, unused_mut)]
 fn main() {
     //define a tuple
@@ -32,7 +32,7 @@ fn main() {
 
 Assign Tuple value to individual variables
 
-```
+```rust
 #[allow(unused_variables, unused_mut)]
 fn main() {
     //define a tuple
@@ -49,7 +49,7 @@ fn main() {
 
 **Mutable Tuples**
 
-```
+```rust
 fn main() {
     //define a tuple
     let mut person_data = ("Rachel", 30, "50kg", "5.4ft");
@@ -64,7 +64,7 @@ fn main() {
 
 **Print using Debug Trait**
 
-```
+```rust
 fn main() {
     //define a tuple
     let mut person_data = ("Rachel", 30, "50kg", "5.4ft");

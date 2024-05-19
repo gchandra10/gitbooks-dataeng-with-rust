@@ -1,7 +1,5 @@
 # Arrays
 
-**Arrays**
-
 An array is a **homogenous sequence of elements**.&#x20;
 
 A Collection of values of the same type is to be stored in a single variable.&#x20;
@@ -10,15 +8,15 @@ Fixed length & Length known at compile time.
 
 By default, the first element is always at index 0.
 
-![](../.gitbook/assets/04\_arrays.png)
+![](../../assets/04\_arrays.png)
 
 By default, arrays are immutable.
 
-<figure><img src="../.gitbook/assets/04_arrays_definition.png" alt=""><figcaption><p><strong>Src:Educative.io</strong></p></figcaption></figure>
+<figure><img src="../../assets/04_arrays_definition.png" alt=""><figcaption><p><strong>Src:Educative.io</strong></p></figcaption></figure>
 
 **Define an Array**
 
-```
+```rust
 #[allow(unused_variables, unused_mut)]
 fn main() {
    //define an array of size 4
@@ -30,7 +28,7 @@ fn main() {
 
 **Access Array element**
 
-```
+```rust
 fn main() {
    //define an array of size 4
    let arr:[i32;4] = [1, 2, 3, 4]; 
@@ -45,7 +43,7 @@ fn main() {
 
 **Mutable Arrays**
 
-```
+```rust
 fn main() {
     //define a mutable array of size 4
     let mut arr:[i32;4] = [1, 2, 3, 4]; 
@@ -59,7 +57,7 @@ fn main() {
 
 Using Loop or using debug trait
 
-```
+```rust
 fn main() {
     //define an array of size 4
     let arr:[i32;4] = [1, 2, 3, 4]; 
@@ -71,7 +69,7 @@ fn main() {
 
 **Get Array Length**
 
-```
+```rust
 fn main() {
     //define an array of size 4
     let arr:[i32;4] = [1, 2, 3, 4]; 
@@ -89,9 +87,9 @@ A slice is a two-word object, the first word is a data pointer and the second wo
 
 Data pointer is a programming language object that points to the memory location of the data, i.e., it stores the memory address of the data.
 
-![](../.gitbook/assets/04\_array\_slice.png)
+![](../../assets/04\_array\_slice.png)
 
-```
+```rust
 fn main() {
     //define an array of size 4
     let arr:[i32;4] = [1, 2, 3, 4]; 

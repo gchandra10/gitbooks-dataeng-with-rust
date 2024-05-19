@@ -2,11 +2,11 @@
 
 There are 3 types of loops in Rust
 
-### While Loop
+## While Loop
 
 Loops as long as the condition is True, exit when the condition if False.
 
-```
+```rust
 // Some code
 
 fn main() {
@@ -17,12 +17,11 @@ fn main() {
     }
     println!("finally i is {}", i);
 }
-
 ```
 
-### For Loop
+## For Loop
 
-```
+```rust
 // Left side Inclusive, Right side exclusive
 
 fn main() {
@@ -36,12 +35,11 @@ fn main() {
         println!("{}", x);
     }
 }
-
 ```
 
-### Loop
+## Loop
 
-```
+```rust
 // Some code
 
 fn main() {
@@ -54,10 +52,9 @@ fn main() {
     }
     println!("{}", x);
 }
-
 ```
 
-```
+```rust
 // Break with message
 
 fn main() {
@@ -70,5 +67,4 @@ fn main() {
     };
     println!("from loop: {}", v);
 }
-
 ```

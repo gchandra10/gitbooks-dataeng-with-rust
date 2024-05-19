@@ -2,10 +2,7 @@
 
 Match is similar to  Switch Case in  other languages.
 
-```
-// Some code
-
-
+```rust
 fn main() {
     let number = 34;
     // TODO ^ Try different values for `number`
@@ -39,13 +36,11 @@ fn main() {
 
     println!("{} -> {}", boolean, binary);
 }
-
 ```
 
-### Tuples with Match
+## Tuples with Match
 
-```
-
+```rust
 fn main() {
     let triple = (0, -2, 3);
     // TODO ^ Try different values for `triple`
@@ -63,7 +58,4 @@ fn main() {
         // `_` means don't bind the value to a variable
     }
 }
-
 ```
-
-&#x20;

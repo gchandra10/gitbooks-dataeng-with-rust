@@ -18,9 +18,7 @@ cargo audit
 
 Check the Vulnerable crates and fix as suggested.
 
-
-
-Example:
+**Example:**
 
 Goto osinfo project
 

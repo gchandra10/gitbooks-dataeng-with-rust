@@ -27,7 +27,7 @@ macro_rules! <name of macro>{
 {} - Expand the code / Body of the macro
 ```
 
-```
+```rust
 // Macro with No argument
 
 macro_rules! print_hello {
@@ -44,7 +44,7 @@ fn main() {
 
 **Macro returning a constant value**
 
-```
+```rust
 // Macro returning value 10
 
 macro_rules! ten {
@@ -60,7 +60,7 @@ fn main(){
 
 using **expr** designator
 
-```
+```rust
 // Macro with one argument
 
 macro_rules! hi {
@@ -76,7 +76,7 @@ fn main() {
 
 **Simple addition macro**
 
-```
+```rust
 // Takes two arguments
 
 macro_rules! add{
@@ -96,7 +96,7 @@ fn main(){
 
 **Demo Stringify**
 
-```
+```rust
 // Stringify
 //In Rust, stringify! is a macro that takes a Rust expression 
 //and converts it into a string literal 
@@ -109,7 +109,7 @@ fn main() {
 
 **Macro with Expressions**
 
-```
+```rust
 // More Expressions
 
 macro_rules! print_result {
@@ -130,7 +130,7 @@ fn main() {
 
 using **expr** and **ty** designators
 
-```
+```rust
 // multiple designators
 // variables with different datatypes can be added using this macro
 
@@ -156,7 +156,7 @@ fn main(){
 And comma is the separator.
 ```
 
-```
+```rust
 // Repeat / Dynamic number of arguments
 
 macro_rules! hi {
@@ -179,7 +179,7 @@ Remember vec! Macro?
 
 Let's try to create our equivalent of it.
 
-```
+```rust
 // Creating vec! equivalent 
 
 macro_rules! my_vec {
@@ -201,7 +201,7 @@ fn main() {
 
 ### Repeat - with Numeric arguments
 
-```
+```rust
 macro_rules! add_all{
     ($($a:expr) , *) => 
     {
@@ -223,8 +223,7 @@ fn main(){
 
 ### Compile time Assertions
 
-```
-
+```rust
 macro_rules! assert_equal_len {
     ($a:expr, $b:expr) => {
         assert!($a.len() == $b.len(), "Arrays must have the same length");
@@ -246,7 +245,7 @@ fn main() {
 
 Overload to accept different combinations of arguments
 
-```
+```rust
 // `check!` will compare `$left` and `$right`
 // in different ways depending on how you invoke it:
 

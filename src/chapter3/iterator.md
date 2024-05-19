@@ -8,9 +8,7 @@ Loops are Imperative. You must mention how often to loop over and follow Procedu
 
 Iterators are Declarative. This means it specifies what to do instead of how to do it and follows Functional Style programming.
 
-
-
-```
+```rust
 // Iterator
 
 fn main() {
@@ -29,25 +27,34 @@ We will discuss more about **Some** in later weeks. It's like you have Some(lett
 
 The purpose is to replace the concept of Null and handle Null Safety. It also handles Type Safety.
 
-```
+
+```rust
 fn main() {
     let ages = [27, 35, 40, 10, 19];
     let mut ages_iterator = ages.iter();
     
-    // println!("{:?}",ages_iterator.next());
-    // println!("{:?}",ages_iterator.next());
-    // println!("{:?}",ages_iterator.next());
-    // println!("{:?}",ages_iterator.next());
-    // println!("{:?}",ages_iterator.next());
-    // println!("{:?}",ages_iterator.next());
-    
+    println!("{:?}",ages_iterator.next());
+    println!("{:?}",ages_iterator.next());
+    println!("{:?}",ages_iterator.next());
+    println!("{:?}",ages_iterator.next());
+    println!("{:?}",ages_iterator.next());
+    println!("{:?}",ages_iterator.next());
+
+}
+```
+
+```rust
+fn main() {
+    let ages = [27, 35, 40, 10, 19];
+    let mut ages_iterator = ages.iter();
+
     while let Some(x) = ages_iterator.next(){
         println!("{:?}",Some(x));
     }
 }
 ```
 
-```
+```rust
 fn main() {
     let ages = [27, 35, 40, 10, 19];
     let mut ages_iterator = ages.iter();

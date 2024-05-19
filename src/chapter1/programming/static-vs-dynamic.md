@@ -34,5 +34,5 @@ Python/Ruby/Erlang/Javascript/PHP/Perl
 
 Simple Python example
 
-![](../.gitbook/assets/image.png)
+![](../../assets/image.png)
 

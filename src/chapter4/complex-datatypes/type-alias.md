@@ -6,7 +6,7 @@ Point to remember
 
 The first letter of the type should be in upper case.
 
-```
+```rust
 // type alias
 
 type Bannertype = u32;

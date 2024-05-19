@@ -1,21 +1,18 @@
 # Chapter 4
 
-* [complex-datatypes](complex-datatypes/README.md)
-    * [vector-datatype](complex-datatypes/vector-datatype.md)
-    * [structs](complex-datatypes/structs.md)
-    * [enums](complex-datatypes/enums.md)
-    * [hash-map](complex-datatypes/hash-map.md)
-    * [type-alias](complex-datatypes/type-alias.md)
-
-* [input-from-user](input-from-user.md)
-
-* [vector-struct-input](vector-struct-input.md)
-
-* [command-line-args](command-line-args.md)
-
-* [modules](modules/README.md)
-    * [module-sub-folders](modules/module-sub-folders.md)
-    * [module-multiple-files](modules/module-multiple-files.md)
-    * [user-defined-module](modules/user-defined-module.md)
-    * [creating-a-library](modules/creating-a-library.md)
-    * [standard-modules](modules/standard-modules.md)
+* [Complex Datatypes](complex-datatypes/README.md)
+    * [Type Alias](complex-datatypes/type-alias.md)
+    * [Vectors](complex-datatypes/vector-datatype.md)
+    * [Hash Maps](complex-datatypes/hash-map.md)
+    * [Structs](complex-datatypes/structs.md)
+    * [Enums](complex-datatypes/enums.md)
+* [User Input](input-from-user.md)
+* [Vector Struct Input](vector-struct-input.md)
+* [Commandline Args](command-line-args.md)
+* [Modules](modules/README.md)
+    * [Overview](modules/overview.md)
+    * [Standard Modules](modules/standard-modules.md)
+    * [Userdefined Modules](modules/user-defined-module.md)
+    * [Module Multiple files](modules/module-multiple-files.md)
+    * [Module Sub Folders](modules/module-sub-folders.md)
+    * [Creating a Library](modules/creating-a-library.md)
