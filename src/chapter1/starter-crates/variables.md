@@ -127,7 +127,7 @@ Variable shadowing is a technique in which a variable declared within a certain 
 
 ![Images Source: https://www.educative.io](../../assets/02\_variable\_shadowing.png)
 
-```
+```rust
 fn main() {
   let outer_variable = 112;
   { // start of code block

@@ -18,8 +18,6 @@ The integer type in which the particular size depends on the underlying machine 
 * `isize`: The **pointer-sized signed** integer type.
 * `usize`: The **pointer-sized unsigned** integer type.
 
-
-
 ```rust
 // see the smallest and biggest numbers,you can use MIN and MAX 
 // after the name of the type
@@ -39,7 +37,7 @@ fn main() {
 }
 ```
 
-### Explicit Declaration
+## Explicit Declaration
 
 ```rust
 fn main() {
@@ -57,7 +55,7 @@ fn main() {
 }
 ```
 
-### Alternate Way to Declare
+## Alternate Way to Declare
 
 ```rust
 // Alternate Way
@@ -71,7 +69,7 @@ fn main() {
 }
 ```
 
-### Type Inference
+## Type Inference
 
 ```rust
 fn main() {

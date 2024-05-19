@@ -6,7 +6,7 @@ For example, you need to explain why \&str2 ? why not str2.
 
 what is the use of collect()
 
-### Concatenation
+## Concatenation
 
 ```rust
 // concatenation
@@ -19,7 +19,7 @@ fn main() {
 }
 ```
 
-### String Reverse
+## String Reverse
 
 ```rust
 // Reverse String
@@ -31,7 +31,7 @@ fn main() {
 }
 ```
 
-### Check Palindrome
+## Check Palindrome
 
 ```rust
 // Palindrome
@@ -49,7 +49,7 @@ fn main() {
 }
 ```
 
-### String Padding
+## String Padding
 
 ```rust
  // String Padding

@@ -1,41 +1,59 @@
 # Cargo
 
-```
-// Cargo frequently used subcommands
+**Cargo frequently used subcommands**
 
-cargo --help
+```cargo --help```
 
-cargo --version
+```cargo --version```
 
-cargo new projectname  //Creates project under new sub folder
+*Creates project under new sub folder*
 
-cargo init projectname // Creates project under existing folder
+```cargo new projectname```
 
-cargo build //Compile the current package
+*Creates project under existing folder*
 
-cargo build --release
+```cargo init projectname```
 
-cargo run //Run the current package
+*Compile the current package*
 
-cargo check //Check the current package for dependency errors
+```cargo build```
 
-cargo fetch //Fetch dependencies of a package from the network
+*Compile the current package for Production*
 
-cargo test //Execute unit and integration tests of a package
+```* cargo build --release```
 
-cargo clean //Remove generated artifacts
+*Run the current package*
 
-cargo update //Update dependencies as recorded in the local lock file
+```cargo run```
 
-cargo doc //build package's documentation
+*Check the current package for dependency errors*
 
-cargo fmt //format the code
+```cargo check```
 
+*Fetch dependencies of a package from the network*
 
-```
+```cargo fetch```
 
+*Execute unit and integration tests of a package*
 
+```cargo test```
 
-**Cargo Book**
+*Remove generated artifacts*
 
-{% embed url="https://doc.rust-lang.org/cargo/commands/index.html" %}
+```cargo clean```
+
+*Update dependencies as recorded in the local lock file*
+
+```cargo update```
+
+*Build package's documentation*
+
+```cargo doc```
+
+*Format the code*
+
+```cargo fmt```
+
+*Refer more Cargo commands in Cargo Book*
+
+[Cargo Book](https://doc.rust-lang.org/cargo/commands/index.html)
