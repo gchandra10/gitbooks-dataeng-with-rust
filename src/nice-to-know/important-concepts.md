@@ -39,7 +39,7 @@ Base64 is a way to encode binary data into an ASCII character set known to prett
 
 So Base64 Binary values are six bits not 8 bits.
 
-<figure><img src="../../assets/1_1pdlgVGk55PMx8wLQiQl_g.png" alt=""><figcaption><p><a href="https://medium.com/swlh/powering-the-internet-with-base64-d823ec5df747">https://medium.com/swlh/powering-the-internet-with-base64-d823ec5df747</a></p></figcaption></figure>
+<figure><img src="../../assets/binary_character_mapping.png" alt=""><figcaption><p><a href="https://medium.com/swlh/powering-the-internet-with-base64-d823ec5df747">https://medium.com/swlh/powering-the-internet-with-base64-d823ec5df747</a></p></figcaption></figure>
 
 Base64 encoding converts every three bytes of data (three bytes is 3\*8=24 bits) into four base64 characters.
 

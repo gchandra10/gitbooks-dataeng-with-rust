@@ -47,7 +47,7 @@ Many languages inspire Rust, such as
 
 ### **Stackoverflow 2022 Survey**
 
-<figure><img src="../assets/stackoverflow_rust (1).png" alt=""><figcaption><p><a href="https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted"><strong>https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted</strong></a></p></figcaption></figure>
+<figure><img src="../assets/stackoverflow_rust.png" alt=""><figcaption><p><a href="https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted"><strong>https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted</strong></a></p></figcaption></figure>
 
 ### What Is Rust Used For? <a href="#what-is-rust-used-for" id="what-is-rust-used-for"></a>
 

@@ -32,9 +32,7 @@ UML - Unified Data Modeling
 
 Terraform - Manage Cloud Resources
 
-
-
-<img src="../../assets/image (1).png" alt="" data-size="original">
+<img src="../../assets/dsl_over_gpl.png" alt="" data-size="original">
 
 image src: [https://tomassetti.me/domain-specific-languages/](https://tomassetti.me/domain-specific-languages/)
 

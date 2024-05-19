@@ -1,5 +1,7 @@
 # Static vs Dynamic
 
+## Statically Typed
+
 **Statically typed** languages check the types and look for type errors during compile time.
 
 Static type means checking for types before running the program. This lets the compiler decide whether a given variable can perform the requested actions.&#x20;
@@ -19,6 +21,7 @@ Popular languages that are statically typed are
 C/C++/GO/Haskell/JAVA/SCALA/RUST
 
 
+## Dynamically Typed
 
 **Dynamically typed** languages check the types and look for type errors during runtime.
 
@@ -32,7 +35,7 @@ Popular languages that are dynamically typed are
 
 Python/Ruby/Erlang/Javascript/PHP/Perl
 
-Simple Python example
+**Simple Python example**
 
-![](../../assets/image.png)
+![](../../assets/dynamic_typed_python.png)
 
