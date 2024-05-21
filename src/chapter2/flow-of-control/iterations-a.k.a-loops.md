@@ -7,8 +7,6 @@ There are 3 types of loops in Rust
 Loops as long as the condition is True, exit when the condition if False.
 
 ```rust
-// Some code
-
 fn main() {
     let mut i = 0;
     while i != 6 {
@@ -40,8 +38,6 @@ fn main() {
 ## Loop
 
 ```rust
-// Some code
-
 fn main() {
     let mut x = 0;
     loop {

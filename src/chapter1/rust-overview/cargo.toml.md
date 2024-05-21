@@ -31,8 +31,6 @@ os_info = "3"
 ```
 
 ```
-// Some code
-
 [package]
 name = "hello_world"
 version = "0.1.0"

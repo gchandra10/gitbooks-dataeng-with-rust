@@ -23,8 +23,6 @@ cargo test --help
 By default, cargo displays detailed output for failed test cases. To see the standard output for Success or Failure tests
 
 ```
-// Some code
-
 cargo test -- --show-output
 
 Make sure there is no space between --show-output 
@@ -57,8 +55,6 @@ cargo runs all tests containing the string in test name.
 ### Ignore specific tests
 
 ```
-// Some code
-
 #[test]
 #[ignore]
 

@@ -1,8 +1,6 @@
 # Calculator
 
 ```
-// Some code
-
 fn add(a: f32, b: f32) -> f32 {
     a + b
 }
@@ -72,15 +70,11 @@ fn test_sub2() {
 ### How to Test the code
 
 ```
-// Some code
-
 cargo test
 ```
 
 ### How to Run the code
 
 ```
-// Some code
-
 cargo run
 ```

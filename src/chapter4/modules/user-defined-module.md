@@ -27,8 +27,6 @@ fn main(){
 Pass params
 
 ```
-// Some code
-
     mod sales {
         pub fn meet_customer(num:i32) {
             println!("meet customer {num}");

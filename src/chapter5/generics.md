@@ -9,7 +9,6 @@ Generics are a way to make a function or a type work for multiple types to avoid
 * Make Programming easier without reducing runtime performance.
 
 ```rust
-// Some code
 
 use std::fmt::Debug;
 use std::fmt::Display;

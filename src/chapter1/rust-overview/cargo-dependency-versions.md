@@ -49,8 +49,6 @@ os-info = "3"&#x20;
 **Using crate.io repositories**
 
 ```
-// Some code
-
 [dependencies]
 regex = { git = "https://github.com/rust-lang/regex" }
 

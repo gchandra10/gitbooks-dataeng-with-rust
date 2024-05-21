@@ -115,7 +115,6 @@ With the increase in input there is an exponential growth in Time and Space.
 Typical example :&#x20;
 
 ```
-// Some code
 
 function fibonacci(n){
     if n = 0 return 0

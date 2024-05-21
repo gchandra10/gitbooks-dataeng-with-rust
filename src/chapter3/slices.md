@@ -9,7 +9,7 @@ A _string slice_ is a reference to part of a `String`, and it looks like this:
 
 fn main() {
     //define an array of size 4
-    let arr:[i32;4] = [1, 2, 3, 4,5,6,7]; 
+    let arr:[i32;8] = [1, 2, 3, 4,5,6,7]; 
     
     //define the slice
     let slice_array1 = &arr;
@@ -44,6 +44,11 @@ fn main() {
     println!("{}",word);
 }
 ```
+
+The string s is converted to bytes using the as_bytes() method for the purpose of iterating over individual bytes and finding the index of the first space character (b' ').
+
+The reason for converting the string to bytes is that strings in Rust are encoded using UTF-8, which means that a single character (like 'é') can be represented by multiple bytes. If you were to iterate over the characters of the string directly, you might not get the correct index of the space character, especially if the string contains non-ASCII character.
+
 
 ```rust
 // return value

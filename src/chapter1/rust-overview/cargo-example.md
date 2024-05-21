@@ -1,8 +1,6 @@
 # Cargo Example
 
 ```
-// Some code
-
 cargo new osinfo
 
 cd osinfo
@@ -42,8 +40,6 @@ cargo build
 check the executable under target/debug
 
 ```
-// Some code
-
 cargo build --release
 ```
 

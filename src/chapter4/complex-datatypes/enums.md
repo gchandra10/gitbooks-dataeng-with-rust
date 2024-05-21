@@ -2,7 +2,16 @@
 
 **Enumerators**
 
-Define a data type with multiple possible variants
+Define a data type with multiple possible variants.
+
+If Today is Tuesday, it can be written as Tue, Tuesday, TUESDAY, T in several forms. How to standarize it?
+
+Example:
+
+- Days of the Week.
+- Months in a year.
+- Traffic light colors.
+
 
 It Enumerates a finite number of options or types.
 
@@ -10,8 +19,26 @@ It Enumerates a finite number of options or types.
 * How enums are commonly used.
 * There are few standard enums you will use in Rust.
 
+
 ```rust
 #[derive(Debug)]
+enum TrafficLight{
+    Red,
+    Yellow,
+    Green
+}
+
+fn main(){
+    let my_light = TrafficLight::Red;
+
+    println!("{:?}", my_light);
+}
+```
+
+**Importance of using derive(Debug) Trait.**
+Execute this script to see the result.
+
+```rust
 enum TrafficLight{
     Red,
     Yellow,
@@ -107,7 +134,14 @@ fn main() {
 
 In Database world, commonly usages are
 
-```rust
+```
+enum RightClick {
+    Copy,
+    Paste,
+    Save,
+    Quit
+}
+
 enum FileFormat {
     CSV,
     Parquet,
@@ -501,8 +535,6 @@ fn main() -> Result<(), String> {
     Ok(())
 }
 ```
-
-
 
 ### Another Simple Example
 

@@ -83,6 +83,30 @@ After foo() gets executed, control transfers to main, and the values are dealloc
 | ------- | ---- | ----- |
 | 0       | x    | 42    |
 
+----
+
+```mermaid
+stateDiagram-v2
+    [*] --> Main
+    state Main {
+        [*] --> PushMainFrame
+        PushMainFrame: Push frame for main()
+        PushMainFrame --> AllocateX: x = 42
+        AllocateX --> CallFoo: Call foo()
+        CallFoo --> PushFooFrame: Push frame for foo()
+        state PushFooFrame {
+            [*] --> AllocateY: y = 5
+            AllocateY --> AllocateZ: z = 100
+        }
+        PushFooFrame --> PopFooFrame: Pop frame for foo()
+        PopFooFrame --> ReturnFoo: foo() returns
+        ReturnFoo --> PopMainFrame: Pop frame for main()
+        PopMainFrame --> [*]
+    }
+    Main --> [*]
+```
+----
+
 ### Copy Trait
 
 ```rust
@@ -109,8 +133,6 @@ For data that is created while the application is running. Data in this region m
 Example: Vector, String
 
 ```rust
-// Some code
-
 fn main(){
     let s1=String::from("hello");
     println!("{}",s1)

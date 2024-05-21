@@ -11,8 +11,6 @@ cargo install cargo-audit
 Go to the project you want to audit
 
 ```
-// Some code
-
 cargo audit
 ```
 
