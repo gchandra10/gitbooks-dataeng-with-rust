@@ -9,7 +9,7 @@ A _string slice_ is a reference to part of a `String`, and it looks like this:
 
 fn main() {
     //define an array of size 4
-    let arr:[i32;8] = [1, 2, 3, 4,5,6,7]; 
+    let arr:[i32;7] = [1, 2, 3, 4,5,6,7]; 
     
     //define the slice
     let slice_array1 = &arr;
