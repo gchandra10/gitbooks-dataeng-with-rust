@@ -29,7 +29,7 @@ It's a unique & critical aspect of Rust.
 
 _{:p} - Pointer Trait, used to print the memory location of variables._
 
-```
+```rust
 // Demonstrate Shadowing
 
 fn main() {

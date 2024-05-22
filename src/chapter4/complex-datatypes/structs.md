@@ -182,10 +182,9 @@ fn main() {
 
 #### Using Associated Function
 
-Functions inside the impl block that do not take "self" as a parameter.&#x20;
+Functions inside the impl block that do not take "self" as a parameter.
 
 ```rust
-
 #[derive(Debug, Clone)]
 struct Students {
     id: i32,
@@ -207,20 +206,20 @@ impl Students {
 
 fn main() {
 
-    // let s: Students = Students {
-    //     id: 10,
-    //     name: String::from("Rachel"),
-    //     course: String::from("DB"),
-    // };
+    let s: Students = Students {
+        id: 10,
+        name: String::from("Rachel"),
+        course: String::from("DB"),
+    };
     
-    // let s1: Students = Students {
-    //     id: 11,
-    //     name: String::from("Monica"),
-    //     course: String::from("DB"),
-    // };
+    let s1: Students = Students {
+        id: 11,
+        name: String::from("Monica"),
+        course: String::from("DB"),
+    };
     
-    // s.get_student_details();
-    // s1.get_student_details();
+    s.get_student_details();
+    s1.get_student_details();
     
     // Creating Student using Associated Function and printing it via Method
     

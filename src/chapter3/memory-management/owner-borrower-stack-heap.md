@@ -1,6 +1,6 @@
 # Owner Borrower Stack Heap
 
-```
+```rust
 // Owner - Borrower - Stack - Heap - Slices
 
 fn main() {

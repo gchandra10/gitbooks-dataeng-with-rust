@@ -48,7 +48,7 @@ This is allowed in other languages like C++, leading to memory issues.
 
 **How to solve it?**
 
-Remove the & from the **return value and get\_name()** definition and return the variable.&#x20;
+Remove the & from the **return value and get_name()** definition and return the variable.
 
 ```rust
 fn get_name() -> String{

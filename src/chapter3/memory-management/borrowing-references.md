@@ -4,7 +4,7 @@
 
 There are few rules when it comes to borrowing. Let's take a quick look at them.
 
-```
+```rust
 // Cannot change as it's not a mutable reference
 
 fn changeme(param_msg: &String) {
@@ -22,7 +22,7 @@ fn main() {
 
 ### Borrowing Mutable References
 
-```
+```rust
 // Mutable reference
 
 fn changeme(param_msg: &mut String) {

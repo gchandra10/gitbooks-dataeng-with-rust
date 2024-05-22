@@ -30,14 +30,14 @@ fn main() {
     cities.insert("Swedesboro", 28000);
     
     //Option 1 - Update / Overwrite Existing Value
-    //cities.insert("Glassboro", 31000);
+    cities.insert("Glassboro", 31000);
     
     //Option 2 - Insert a new entry if it doesn't exist
-    //cities.entry("Depford").or_insert(12000);
+    cities.entry("Depford").or_insert(12000);
     
     //Option 3 - Get the value of the Key and perform a mathematical operation
-    //let gpopulation = cities.entry("Glassboro").or_insert(0);
-    //*gpopulation += 1;
+    let gpopulation = cities.entry("Glassboro").or_insert(0);
+    *gpopulation += 1;
     
     //print the hash map values. The print order may or may not be the same
     //as the insert. It changes from time to time.
@@ -51,8 +51,5 @@ fn main() {
     else if glassboro_population.is_none(){
         println!("glassboro_population is not available", );
     }
-
-    
-    
 }
 ```

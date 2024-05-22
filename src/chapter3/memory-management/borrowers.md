@@ -4,7 +4,7 @@ Access data without taking ownership of it by creating references using the borr
 
 We are familiar with this operator in the call by reference.
 
-```
+```rust
 // Print Name - The second print fails because the name transferred its ownership to p_name
 
 fn printname(p_name:String){
@@ -22,7 +22,7 @@ fn main() {
 
 ### Borrowing Concept
 
-```
+```rust
 // Instead of passing the actual value, passing the Reference / Borrow operator
 
 fn printname(p_name:&String){
@@ -47,7 +47,7 @@ fn main() {
 
 ### Using String.clone()
 
-```
+```rust
 // String.clone()
 
 fn printname(name:String){
@@ -61,14 +61,3 @@ fn main() {
     printname(name);
 }
 ```
-
-###
-
-
-
-
-
-
-
-
-
