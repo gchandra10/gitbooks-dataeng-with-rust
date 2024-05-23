@@ -277,9 +277,11 @@ struct Students {
 
 impl Students {
     fn get_student_details(self){
+        println!("{}", "-".repeat(100));
         println!("{}", self.id);
         println!("{}", self.name);
         println!("{}", self.course);
+        println!("{}", "-".repeat(100));
     }
     
     fn create_student(pid:i32,pname:String,pcourse:String) -> Students{
@@ -325,11 +327,11 @@ struct Students {
 
 impl Students {
     fn get_student_details(&self){
-        println!("-------------------");
+        println!("{}", "-".repeat(100));
         println!("{}", self.id);
         println!("{}", self.name);
         println!("{}", self.course);
-        println!("-------------------");
+        println!("{}", "-".repeat(100));
     }
     
     fn create_student(pid:i32,pname:String,pcourse:String) -> Students{
