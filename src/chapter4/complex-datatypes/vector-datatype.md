@@ -18,6 +18,18 @@ fn main(){
 }
 ```
 
+```rust
+fn main(){
+    let mut my_vec = Vec::new();
+    my_vec.push("Rachel");
+    my_vec.push("Monica");
+    my_vec.push("Phoebe");
+    
+    println!("{:?},{:p},{:p}",my_vec,&my_vec,my_vec.as_ptr());
+       
+}
+```
+
 ## Vector with Datatype
 
 ```rust
@@ -36,7 +48,19 @@ fn main(){
 }
 ```
 
-**What about this?**
+// Storing String Literal in String Object
+
+```rust
+fn main(){
+    let mut my_vec: Vec<String> = Vec::new();
+    my_vec.push("Rachel");
+    my_vec.push("Monica");
+    my_vec.push("Phoebe");
+   
+    println!("{:?}",my_vec);  
+}
+```
+
 
 ```rust
 // &str
@@ -89,7 +113,7 @@ fn main(){
 ## Capacity() vs Len()
 
 ```rust
-// capacity() number of elements the vector can hold (without reallocating memory)
+// capacity() number of elements the vector can hold (without reallocating memory). This is usually larger than or equal to the number of elements currently in the vector.
 // len() number of elements
 
 fn main(){
@@ -99,10 +123,11 @@ fn main(){
     my_vec.push("Phoebe".to_string());
 
     println!("{:?}",my_vec);
+    //Initial capacity was 4
     println!("{}",my_vec.capacity());
     println!("{}",my_vec.len());
     
-    // now Rust is allocating space for 103 elements
+    // now Rust is allocating space 100 more elements. Now the total capacity will be 103. 
     my_vec.reserve(100);
     
     println!("{}",my_vec.capacity());

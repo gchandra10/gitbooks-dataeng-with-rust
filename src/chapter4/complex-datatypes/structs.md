@@ -34,7 +34,64 @@ Similar to Type alias, the name of the struct begins with an uppercase letter fo
 
 Structs are usually declared outside the main function. If the scope is local, it can be declared inside the main.
 
-#### Struct - Stack or Heap?
+
+### Where the data is store Stack or Heap?
+
+Lets find out where the objects inside Struct are created.
+
+```rust
+#[allow(dead_code)]
+struct Students {
+    id: i32,
+    name: String,
+    course: String,
+}
+
+fn main() {
+    let s: Students = Students {
+        id: 10,
+        name: String::from("Rachel"),
+        course: String::from("DB"),
+    };
+
+    println!(
+        "id value -> {} \
+    \naddress of s.id -> {:p} \
+    \nAddress of s -> {:p} \
+    \nAddress of s.name -> {:p} \
+    \nAddress of s.course -> {:p} \
+    \ns.name pointing to -> {:p} \
+    \ns.course pointing to -> {:p}",
+        s.id,
+        &s.id,
+        &s,
+        &s.name,
+        &s.course,
+        s.name.as_ptr(),
+        s.course.as_ptr()
+    );
+}
+```
+
+```
+Stack:
+---------
+| id (10) |
+---------
+| name (pointer, length, capacity) |
+---------
+| course (pointer, length, capacity) |
+---------
+
+Heap:
+--------------------------------
+| "Rachel" (string data)        |
+--------------------------------
+| "DB" (string data)            |
+--------------------------------
+```
+
+### Struct - Stack or Heap?
 
 ```rust
 // Struct Stack or Heap
@@ -80,7 +137,7 @@ Instead of printing s.id can you try printing the entire Struct?
 ```
 // Using debug trait print the value of S
 
-println!("{:?}",s);
+println!("{:?}",s4);
 ```
 
 Now, what do you see?
@@ -92,7 +149,31 @@ Now, what do you see?
 struct Students{id:i32}
 ```
 
-#### Struct inside Vector
+### Putting together all of the above
+
+```rust
+// Struct Stack or Heap
+
+#[derive(Clone,Debug)]
+struct Students {
+    id: i32
+}
+
+fn main() {
+    let s: Students = Students {
+        id: 10
+    };
+
+    let s4 = s.clone();
+    
+    println!("{}",s.id);
+    println!("{:?}",s4);
+    
+}
+```
+
+
+### Struct inside Vector
 
 ```rust
 #[derive(Debug, Clone)]
@@ -138,6 +219,8 @@ fn main() {
 The implementation block has the keyword "impl" followed by the same name as Struct. It contains methods and functions. A struct can have more than one method or function.
 
 Methods: methods are similar to functions with "fn" keyword. They can have parameters and return values. The only difference is, they are defined within the context of a struct and their first parameter is always self.
+
+In Rust, the self parameter in method signatures refers to the instance of the struct on which the method is called.
 
 Let's see an example
 
