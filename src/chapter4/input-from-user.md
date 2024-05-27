@@ -1,6 +1,8 @@
 # Input from user
 
-```rust
+
+
+```
 // Input String
 
 use std::io;
@@ -19,8 +21,7 @@ fn main(){
 Expect (): Is used when the program panics.
 
 
-
-```rust
+```
 // Accept two numbers
 
 use std::io;

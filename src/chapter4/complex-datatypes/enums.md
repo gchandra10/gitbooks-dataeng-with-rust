@@ -468,9 +468,105 @@ There is an even shorter way to deal with Result (and Option), shorter than a ma
 After a function that returns a result, you can add ?. This will:
 
 If its Ok, return the result
-
 If its Err, return the error
 
+**Before using ?**
+
+```rust
+fn si_using_result(p: f32, n: f32, r: f32) -> Result<f32, String> {
+    if p <= 0. {
+        return Err("Principal cannot be less or equal to zero".to_string());
+    }
+
+    if n <= 0. {
+        return Err("Number of years cannot be less or equal to zero".to_string());
+    }
+
+    if r <= 0. {
+        return Err("Rate cannot be less or equal to zero".to_string());
+    }
+
+    Ok((p * n * r) / 100.0)
+}
+
+fn main() {
+    let p: f32 = 10000.0;
+    let n: f32 = 0.0;
+    let r: f32 = 1.4;
+
+    match si_using_result(p, n, r) {
+        Ok(result) => println!("si = {result}"),
+        Err(e) => println!("Result ENUM - Error occured {:?}", e),
+    }
+
+}
+```
+
+## Now using ?
+
+**Returning Ok()**
+
+```rust
+fn si_using_result(p: f32, n: f32, r: f32) -> Result<f32, String> {
+    if p <= 0. {
+        return Err("Principal cannot be less or equal to zero".to_string());
+    }
+
+    if n <= 0. {
+        return Err("Number of years cannot be less or equal to zero".to_string());
+    }
+
+    if r <= 0. {
+        return Err("Rate cannot be less or equal to zero".to_string());
+    }
+
+    Ok((p * n * r) / 100.0)
+}
+
+fn main() -> Result<(), String> {
+    let p: f32 = 10000.0;
+    let n: f32 = 3.0;
+    let r: f32 = 1.4;
+
+    let result = si_using_result(p, n, r)?;
+    println!("SI calc with {p},{n},{r} = {result}");
+
+    Ok(())
+}
+```
+
+**Returning Err**
+
+```rust
+fn si_using_result(p: f32, n: f32, r: f32) -> Result<f32, String> {
+    if p <= 0. {
+        return Err("Principal cannot be less or equal to zero".to_string());
+    }
+
+    if n <= 0. {
+        return Err("Number of years cannot be less or equal to zero".to_string());
+    }
+
+    if r <= 0. {
+        return Err("Rate cannot be less or equal to zero".to_string());
+    }
+
+    Ok((p * n * r) / 100.0)
+}
+
+fn main() -> Result<(), String> {
+    let p: f32 = 10000.0;
+    let n: f32 = 0.0;
+    let r: f32 = 1.4;
+
+    let result = si_using_result(p, n, r)?;
+    println!("SI calc with {p},{n},{r} = {result}");
+
+    Ok(())
+}
+```
+
+### Another way to write using a intermedia function
 
 ```rust
 fn calc_si(p: f32, n: f32, r: f32) -> Result<f32, String> {
@@ -504,37 +600,8 @@ fn main() {
 }
 ```
 
-Skip the intermediate print\_si function
 
 
-```rust
-
-fn si(p: f32, n: f32, r: f32) -> Result<f32, String> {
-    if p <= 0. {
-        return Err("Principal cannot be less or equal to zero".to_string());
-    }
-
-    if n <= 0. {
-        return Err("Number of years cannot be less or equal to zero".to_string());
-    }
-
-    if r <= 0. {
-        return Err("Rate cannot be less or equal to zero".to_string());
-    }
-
-    Ok((p * n * r) / 100.0)
-}
-
-fn main() -> Result<(), String> {
-    let p: f32 = 10000.0;
-    let n: f32 = 3.0;
-    let r: f32 = 1.4;
-
-    let result = si(p, n, r)?;
-    println!("si = {result}");
-    Ok(())
-}
-```
 
 ### Another Simple Example
 

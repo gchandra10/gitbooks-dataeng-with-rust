@@ -22,13 +22,12 @@ In other languages, we have a similar feature.
 
 Map / Dictionary / Associative Array
 
-**Rules**
+## Rules
 
 * All values must have the same data type.
 * Each key can only have one value associated with it at a time.
 * No duplicate keys.
 
-```rust
 
 ## What is Hashing??
 
@@ -36,13 +35,11 @@ Hashing is a process of transforming any given input (such as a string or a file
 
 Fixed-Size Output: No matter the size of the input, the output (called the hash value) will always have a fixed size.
 
-Uniqueness: Ideally, different inputs should produce different hash values, although collisions (where two different inputs produce the same hash value) can happen.
+**Uniqueness**: Ideally, different inputs should produce different hash values, although collisions (where two different inputs produce the same hash value) can happen.
 
-Efficiency: Hashing is designed to be fast and efficient, making it useful for quick data retrieval.
+**Efficiency**: Hashing is designed to be fast and efficient, making it useful for quick data retrieval.
 
-
-
-### Example
+## Hasing Example
 
 ```rust
 use std::collections::hash_map::DefaultHasher;
@@ -64,7 +61,7 @@ fn main() {
 }
 ```
 
-## HashMap
+## HashMap Example
 
 ```rust
 use std::collections::HashMap;
@@ -214,11 +211,3 @@ fn main() {
     println!("Merged cities: {:?}", cities1);
 }
 ```
-
-
-
-
-
-
-
-
