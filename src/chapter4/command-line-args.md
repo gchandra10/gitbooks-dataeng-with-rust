@@ -24,10 +24,9 @@ The first argument is traditionally the executable path.
 use std::env;
 
 fn main(){
-for (index,argument) in  env::args().enumerate(){
-   
-    println!("{},{}", index, argument)
-}
+    for (index,argument) in  env::args().enumerate(){
+        println!("{},{}", index, argument)
+    }
 }
 ```
 

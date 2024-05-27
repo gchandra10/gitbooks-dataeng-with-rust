@@ -566,7 +566,7 @@ fn main() -> Result<(), String> {
 }
 ```
 
-### Another way to write using a intermedia function
+### Another way to write using a intermediate function
 
 ```rust
 fn calc_si(p: f32, n: f32, r: f32) -> Result<f32, String> {
@@ -601,9 +601,7 @@ fn main() {
 ```
 
 
-
-
-### Another Simple Example
+### Loop through and convert Integers and return Error message for others
 
 ```rust
 // Simple Parse Example
@@ -618,6 +616,52 @@ fn main() {
     for item in str_vec {
         let parsed = parse_str(item);
         println!("{:?}", parsed);
+    }
+}
+```
+
+-----
+
+```unwrap``` is a method available on Option and Result types that is used to extract the contained value. If the Option is Some or the Result is Ok, unwrap returns the contained value. However, if the Option is None or the Result is Err, unwrap will cause the program to panic and terminate execution.
+
+•	Use unwrap sparingly and only when you are sure it won’t cause a panic.	•	Prefer expect with a meaningful message for clarity in cases where you are sure the operation won’t fail.
+
+```rust
+
+fn parse_str(input: &str) -> Result<i32, std::num::ParseIntError> {
+    let parsed_number = input.parse::<i32>()?;
+    Ok(parsed_number)
+}
+
+fn main() {
+    let str_vec = vec!["Seven", "8", "9.0", "nice", "6060"];
+    for item in str_vec {
+        let parsed = parse_str(item).unwrap();
+        println!("{:?}", parsed);
+    }
+}
+```
+
+### unwrap_or_else 
+
+This can be used in production code.
+
+```rust
+fn parse_str(input: &str) -> Result<i32, std::num::ParseIntError> {
+    let parsed_number = input.parse::<i32>()?;
+    Ok(parsed_number)
+}
+
+fn main() {
+    let str_vec = vec!["Seven", "8", "9.0", "nice", "6060"];
+    for item in str_vec {
+        let parsed = parse_str(item).unwrap_or_else(|err| {
+            println!("Error: failed to parse '{}'. Reason: {}", item, err);
+            -1 // Provide a fallback value
+        });
+        if parsed != -1 {
+            println!("{}", parsed);
+        }
     }
 }
 ```
