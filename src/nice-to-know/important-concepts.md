@@ -8,11 +8,14 @@ https://www.epochconverter.com/
 
 It uses 32 Bit Integer, so by Jan 19, Y2038 we will run out of storage and companies gradually upgrading it as they upgrade their systems.
 
-Binary : 0 - 1
-Octal : 0 - 7
-Hex : 0 - 9, A - F
-Base 10 a.k.a Decimal Numbers : 0 - 9
-Base 36 : 0 - 9 + A - Z
+- Binary : 0 - 1
+- Octal : 0 - 7
+- Hex : 0 - 9, A - F
+
+- Base 10 a.k.a Decimal Numbers : 0 - 9
+- Base 36 : 0 - 9 + A - Z
+
+
 
 Base 36 is the most compact case-insensitive alphanumeric numbering system.
 
@@ -39,7 +42,9 @@ Base64 is a way to encode binary data into an ASCII character set known to prett
 
 So Base64 Binary values are six bits not 8 bits.
 
-<figure><img src="../../assets/binary_character_mapping.png" alt=""><figcaption><p><a href="https://medium.com/swlh/powering-the-internet-with-base64-d823ec5df747">https://medium.com/swlh/powering-the-internet-with-base64-d823ec5df747</a></p></figcaption></figure>
+<img src="../assets/binary_character_mapping.png" />
+
+[Img Source](https://medium.com/swlh/powering-the-internet-with-base64-d823ec5df747)
 
 Base64 encoding converts every three bytes of data (three bytes is 3\*8=24 bits) into four base64 characters.
 
@@ -94,6 +99,10 @@ Think about sending Image (binary) as JSON, binary wont work. But sending as Bas
 
 Demo  Img HTML
 
+```
+base64 = "0.22.1"
+```
+
 
 ```rust
 // Convert to Base64
@@ -132,4 +141,61 @@ fn main() {
 }
 ```
 
-Demonstrate what happens if unwrap is not used on decoded string.
+### Image to Base64
+
+```cargo add base64```
+
+Store a image named sample.jpg at the same level as src (not inside src)
+
+```
+use std::fs::File;
+use std::io::{self, Read, Write};
+use base64::{engine::general_purpose, Engine as _};
+
+fn main() -> io::Result<()> {
+    // Read the image file
+    let mut image_file = File::open("sample.jpg")?;
+    let mut image_data = Vec::new();
+    image_file.read_to_end(&mut image_data)?;
+
+    // Encode the image data to Base64
+    let base64_encoded = general_purpose::STANDARD.encode(&image_data);
+
+    // Write the Base64 encoded string to a new file
+    let mut output_file = File::create("output_base641.txt")?;
+    output_file.write_all(base64_encoded.as_bytes())?;
+
+    println!("Base64 encoded image data has been written to output_base64.txt");
+
+    Ok(())
+}
+
+```
+
+### Read from Base64 to Image
+
+```
+use std::fs::File;
+use std::io::{self, Read, Write};
+use base64::{engine::general_purpose, Engine as _};
+
+fn main() -> io::Result<()> {
+    // Read the Base64 encoded text file
+    let mut base64_file = File::open("output_base64.txt")?;
+    let mut base64_string = String::new();
+    base64_file.read_to_string(&mut base64_string)?;
+
+    // Decode the Base64 string to binary image data
+    let image_data = general_purpose::STANDARD.decode(&base64_string).expect("Failed to decode Base64 string");
+
+    // Write the binary image data to a new image file
+    let mut output_image_file = File::create("decoded_image.jpg")?;
+    output_image_file.write_all(&image_data)?;
+
+    println!("Image has been decoded and written to decoded_image.jpg");
+
+    Ok(())
+}
+
+```
+
