@@ -104,7 +104,7 @@ base64 = "0.22.1"
 ```
 
 
-```rust
+```
 // Convert to Base64
 
 use base64::encode;
@@ -122,7 +122,7 @@ fn main() {
 
 **Convert Base64 to String**
 
-```rust
+```
 // Convert to String
 
 use base64::{encode,decode};
