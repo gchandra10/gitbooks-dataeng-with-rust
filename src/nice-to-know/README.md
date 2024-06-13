@@ -6,3 +6,4 @@
 * [Cargo Profiles](cargo-profiles.md)
 * [Cargo Watch](cargo-watch.md)
 * [Cargo Audit](cargo-audit.md)
+* [CI-CD](ci-cd.md)
