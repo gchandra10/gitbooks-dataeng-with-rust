@@ -112,6 +112,7 @@
     * [Cargo Profiles](src/nice-to-know/cargo-profiles.md)
     * [Cargo Watch](src/nice-to-know/cargo-watch.md)
     * [Cargo Audit](src/nice-to-know/cargo-audit.md)
+    * [HTTP & REST API](src/nice-to-know/http-restapi.md)
     * [CI-CD](src/nice-to-know/ci-cd.md)
 
 * [References](src/references.md)
