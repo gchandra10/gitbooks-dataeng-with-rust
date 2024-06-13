@@ -33,8 +33,7 @@ The server stores information about the client's current session in a stateful s
 
     Example: A web application where a user logs in, and the server keeps track of their authentication status and interactions until they log out.
 
-<img src="../assets/05_statefulness" />
-
+<img src="../assets/05_statefulness.png" />
 
 In this diagram:
 
