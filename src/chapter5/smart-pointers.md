@@ -20,9 +20,14 @@ Boxes don't have performance overhead other than storing their data on the heap 
 // Silly use case for Box
 
 fn main() {
-    let c = 4;
-    let c1 = Box::new(c);
-    println!("{},{}", c,c1);
+    let speed = 88;
+    let box_speed: Box<i32> = Box::new(speed);
+    println!("speed {}, Stack location of speed {:p}", speed, &speed);
+    println!("Stack location of box_speed {:p}", &box_speed);
+    println!(
+        "Heap location of value stored inside box_speed {:p}",
+        Box::into_raw(box_speed)
+    );
 }
 ```
 
@@ -65,14 +70,14 @@ fn main() {
     println!{"{:?}", c};
 
     // Find the Size of the Variable in the Stack
-    println!("Class size on stack: {} bytes", mem::size_of_val(&c));
+    println!("Class size on stack: {:p} {} bytes", &c mem::size_of_val(&c));
 
     let boxed_class: Box<Class> = Box::new(c);
     // Size of the Boxed Variable in Stack pointing to Heap.
-    println!("boxed_class size on stack: {} bytes", mem::size_of_val(&boxed_class));
+    println!("boxed_class size on stack: {:p} {} bytes", &boxed_class, mem::size_of_val(&boxed_class));
 
     // Size of the Boxed Variable in Heap
-    println!("boxed_class size on heap: {} bytes", mem::size_of_val(&*boxed_class));
+    println!("boxed_class size on heap: {:p} {} bytes", boxed_class.as_ptr(),  mem::size_of_val(&*boxed_class));
 
     //let unbox_class: Class = *boxed_class;
     //println!("unbox class size on stack: {} bytes", mem::size_of_val(&unbox_class));
