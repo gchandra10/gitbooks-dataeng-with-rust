@@ -49,6 +49,8 @@ fn main() {
 ```rust
 // Better use case for using Box
 
+// Better use case for using Box
+
 use std::mem;
 
 #[allow(dead_code)]
@@ -67,24 +69,22 @@ fn main() {
         lname: String::from("Green"),
     };
 
-    println!{"{:?}", c};
+    println! {"{:?}", c};
 
     // Find the Size of the Variable in the Stack
-    println!("Class size on stack: {:p} {} bytes", &c mem::size_of_val(&c));
+    println!("Class size on stack: {:p} {} bytes",&c,mem::size_of_val(&c));
 
     let boxed_class: Box<Class> = Box::new(c);
     // Size of the Boxed Variable in Stack pointing to Heap.
-    println!("boxed_class size on stack: {:p} {} bytes", &boxed_class, mem::size_of_val(&boxed_class));
+    println!("boxed_class size on stack: {:p} {} bytes",&boxed_class,mem::size_of_val(&boxed_class));
 
     // Size of the Boxed Variable in Heap
-    println!("boxed_class size on heap: {:p} {} bytes", boxed_class.as_ptr(),  mem::size_of_val(&*boxed_class));
+    println!("boxed_class size on heap: {} bytes", mem::size_of_val(&*boxed_class) );
 
     //let unbox_class: Class = *boxed_class;
     //println!("unbox class size on stack: {} bytes", mem::size_of_val(&unbox_class));
-
 }
 ```
-
 
 ```rust
 // Stack to Heap

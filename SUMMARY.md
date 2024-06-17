@@ -114,5 +114,6 @@
     * [Cargo Audit](src/nice-to-know/cargo-audit.md)
     * [HTTP & REST API](src/nice-to-know/http-restapi.md)
     * [CI-CD](src/nice-to-know/ci-cd.md)
+    * [Multiple Rust Files](src/nice-to-know/multiple-rs-files.md)
 
 * [References](src/references.md)

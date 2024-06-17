@@ -256,3 +256,7 @@ Summary
 
     Use Cases: REST APIs are used in web services, mobile applications, and IoT (Internet of Things) applications for various purposes like fetching data, sending commands, and more.
 
+
+### Demo
+
+https://github.com/gchandra10/rust_rest_api_demo
