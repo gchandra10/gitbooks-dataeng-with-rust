@@ -161,11 +161,11 @@ O(2 power N)
 
 With the increase in input there is an exponential growth in Time and Space.
 
-**Example:**
-
 **Fibonacci Series**
 
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610
+
+**Algorithm**
 
 ```
 function fibonacci(n){
@@ -195,14 +195,13 @@ fn main() {
         println!("Fibonacci({}) = {}", i, fibonacci(i));
     }
 }
-
 ```
 
 **For example**
 
-For input = 3, number of iteration is 4   2 power n-1
+(2 power n-1)
 
-For input = 4, number of iteration is 8;
+For input = 3, number of iterations is 4
 
 ```mermaid
 graph TD
@@ -211,6 +210,8 @@ graph TD
     C --> D[Fibonacci 0]
     C --> E[Fibonacci 1]
 ```
+
+For input = 4, number of iterations is 8;
 
 ```mermaid
 graph TD
