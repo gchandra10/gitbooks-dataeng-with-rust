@@ -2,11 +2,18 @@
 
 ## Box
 
-A good use case for the Box type in Rust programming is when you have a large data structure that you want to **store on the heap rather than on the stack**.&#x20;
+A good use case for the Box type in Rust programming is when you have a large data structure that you want to **store on the heap rather than on the stack**.
 
 The Box type allows you to store the data on the heap in a safe and efficient way.
 
-One reason why using a **Box might be beneficial** is that it can **help you avoid stack overflows**. The stack is a fixed-size data structure, so if you try to store a large data structure on the stack, it can overflow and cause your program to crash.&#x20;
+One reason why using a **Box might be beneficial** is that it can **help you avoid stack overflows**. The stack is a fixed-size data structure, so if you try to store a large data structure on the stack, it can overflow and cause your program to crash.
+
+## Use Cases
+
+- Dynamic Sized DataTypes
+- Recursive Data Structures
+- Reducing Stack Usage
+- Enforcing Single Ownership. (instead of splitting with Stack and Heap)
 
 <figure><img src="../assets/toy_box.png" alt=""><figcaption><p>Toy Box</p></figcaption></figure>
 
