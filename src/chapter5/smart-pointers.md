@@ -17,7 +17,6 @@ Rust has a Smart Pointer called Box\<T>. It allows developers to store data on t
 Boxes don't have performance overhead other than storing their data on the heap instead of on the stack.
 
 ```rust
-// Silly use case for Box
 
 fn main() {
     let speed = 88;
@@ -31,6 +30,8 @@ fn main() {
 }
 ```
 
+**The as_ptr() method works on arrays and slices**
+
 ```rust
 fn main() {
 
@@ -40,15 +41,11 @@ fn main() {
     println!("Stack Memory Location of variable large_array : {:p} {:p} {:?}", &large_array, large_array.as_ptr(), large_array);
     
     println!("Heap Memory Location of variable large_array1 : {:p} {:p} {:?}", &large_array1,  large_array1.as_ptr(), large_array1);
-    
-    
-}
 
+}
 ```
 
 ```rust
-// Better use case for using Box
-
 // Better use case for using Box
 
 use std::mem;
@@ -81,8 +78,8 @@ fn main() {
     // Size of the Boxed Variable in Heap
     println!("boxed_class size on heap: {} bytes", mem::size_of_val(&*boxed_class) );
 
-    //let unbox_class: Class = *boxed_class;
-    //println!("unbox class size on stack: {} bytes", mem::size_of_val(&unbox_class));
+    let unbox_class: Class = *boxed_class;
+    println!("unbox class size on stack: {} bytes", mem::size_of_val(&unbox_class));
 }
 ```
 
