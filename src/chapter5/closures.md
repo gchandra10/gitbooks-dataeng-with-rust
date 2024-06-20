@@ -23,9 +23,7 @@ fn main() {
 fn add_one_fn(x: i32) -> i32 {
     1 + x
 }
-```
 
-```rust
 fn main() {
     //let y = 6;
     let add_one_cl = |x: i32| -> i32 { 1 + x};
