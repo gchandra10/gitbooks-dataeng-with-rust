@@ -72,40 +72,6 @@ The key features of Parquet are:
 
 In short, Parquet is a powerful tool in the big data ecosystem due to its efficiency, flexibility, and compatibility with a wide range of tools and languages.
 
-Here are some key metrics comparing CSV and Parquet formats for a 1 GB file:
-
-### 1. File Size
-- **CSV**: Typically, the file size remains around 1 GB as CSV does not offer compression.
-- **Parquet**: The file size is significantly reduced due to its columnar storage format and efficient compression (often around 100-300 MB depending on the data and compression algorithm used).
-
-### 2. Read/Write Speed
-- **CSV**:
-  - **Read Speed**: Slower, as it reads data row by row.
-  - **Write Speed**: Generally fast since it writes data row by row without compression.
-- **Parquet**:
-  - **Read Speed**: Faster for columnar operations due to efficient data access and compression.
-  - **Write Speed**: Slower than CSV due to compression and columnar storage overhead.
-
-### 3. Schema Support
-- **CSV**: No built-in schema support, relies on external definitions or inference.
-- **Parquet**: Strong schema support with embedded metadata, making it easier to manage and enforce data types.
-
-### 4. Data Types
-- **CSV**: Limited to basic data types (strings, numbers). Requires manual handling of data type conversions.
-- **Parquet**: Supports a wide range of data types, including nested structures, making it more suitable for complex datasets.
-
-### 5. Query Performance
-- **CSV**: Slower for querying specific columns as it needs to scan the entire file.
-- **Parquet**: Faster for querying specific columns due to columnar storage, which allows selective reading of data.
-
-### 6. Compatibility
-- **CSV**: Universally compatible and can be opened by any text editor or spreadsheet software.
-- **Parquet**: Requires specific tools and libraries (like Apache Arrow, Pandas, PySpark) for access, but widely supported in modern data processing frameworks.
-
-### 7. Use Cases
-- **CSV**: Best for simple data exchange, quick data inspection, and interoperability with tools that do not support Parquet.
-- **Parquet**: Ideal for large-scale data processing, analytics, and storage due to its efficiency and support for complex data structures.
-
 ### CSV vs Parquet
 
 | Metric            | CSV                   | Parquet                 |
@@ -121,7 +87,16 @@ Here are some key metrics comparing CSV and Parquet formats for a 1 GB file:
 
 These metrics highlight the advantages of using Parquet for efficiency and performance, especially in big data scenarios, while CSV remains useful for simplicity and compatibility.
 
-### Polars
+## Apache Arrow (https://arrow.apache.org/)
+
+**Apache Arrow** defines a language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware like CPUs and GPUs. The Arrow memory format also supports zero-copy reads for lightning-fast data access without serialization overhead.
+
+While Parquet is a storage format and Arrow is an in-memory format, they are often used together. Data stored in Parquet files can be read into Arrow’s in-memory format for processing, and vice versa.
+
+Both formats are maintained by the Apache Software Foundation, and they are designed to complement each other. Arrow provides a standard in-memory format, while Parquet provides a standard on-disk format. Together, they enable efficient data processing workflows that involve both storage and in-memory analytics.
+
+
+## Polars
 
 Polars is a high-performance DataFrame library designed for Rust and Python, aiming to provide fast data manipulation capabilities similar to those found in libraries like Pandas for Python.
 
@@ -163,3 +138,37 @@ Choosing between Polars and Pandas depends on your specific needs, including per
 **Demo**
 
 https://github.com/gchandra10/rust-polars-csv-dataframe-demo
+
+
+### Convert CSV to Parquet
+
+https://crates.io/crates/csv2parquet
+
+cargo install csv2parquet
+
+csv2parquet sales_100.csv sales_100.parquet
+
+
+```
+use parquet::file::reader::{FileReader, SerializedFileReader};
+use std::fs::File;
+use std::path::Path;
+
+fn main() {
+    let file = File::open(&Path::new("sales_100.parquet")).unwrap();
+    let reader = SerializedFileReader::new(file).unwrap();
+    let mut iter = reader.get_row_iter(None).unwrap();
+
+    // Retrieve the schema and column names
+    let schema = reader.metadata().file_metadata().schema_descr();
+    let columns: Vec<String> = schema.columns().iter().map(|c| c.name().to_string()).collect();
+
+     // Print the header
+     println!("{}", columns.join(","));
+
+    while let Some(record) = iter.next() {
+        println!("{:?}", record);
+    }
+
+}
+```
