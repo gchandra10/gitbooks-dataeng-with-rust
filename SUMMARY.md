@@ -115,5 +115,6 @@
     * [HTTP & REST API](src/nice-to-know/http-restapi.md)
     * [CI-CD](src/nice-to-know/ci-cd.md)
     * [Multiple Rust Files](src/nice-to-know/multiple-rs-files.md)
+    * [Storage Formats](src/nice-to-know/storage-format.md)
 
 * [References](src/references.md)
