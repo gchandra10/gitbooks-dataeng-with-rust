@@ -41,7 +41,7 @@ readme="README.md"
 license = "MIT"
 keywords = ["demo", "generics","functions"]
 categories = ["text-processing"]
-repository = "https://github.com/gchandra10/hello_lib/"
+repository = "https://github.com/gchandra10/rust-hello-lib"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

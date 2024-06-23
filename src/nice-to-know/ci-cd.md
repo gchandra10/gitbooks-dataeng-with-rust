@@ -89,11 +89,11 @@ Create a folder .github/workflows and copy the workflow YAML file inside that fo
 
 ### Multiple Runners DEMO
 
-https://github.com/gchandra10/cicd-multiple-runners-demo
+https://github.com/gchandra10/github-actions-multiple-runners-demo
 
 ### Rust DEMO
 
-https://github.com/gchandra10/ci_demo
+https://github.com/gchandra10/rust-ci-demo
 
 **Sample**
 

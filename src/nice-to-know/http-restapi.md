@@ -262,5 +262,5 @@ Summary
 
 ### Demo
 
-https://github.com/gchandra10/rust_rest_api_demo
+https://github.com/gchandra10/rust-rest-api-demo
 
