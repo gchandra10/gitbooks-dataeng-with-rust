@@ -1,7 +1,5 @@
 # Storage Format
 
-Here's the table converted to Markdown:
-
 | Account number | Last name | First name | Purchase (in dollars) |
 |----------------|-----------|------------|-----------------------|
 | 1001           | Green     | Rachel     | 20.12                 |
