@@ -4,24 +4,20 @@
 
 Visit [https://crates.io/](https://crates.io/)
 
-Login with GitHub
+- Login with GitHub
+- Verify the email address
+- Goto Account > API Settings and Generate a new token.
 
-Verify the email address
-
-Goto Account > API Settings and Generate a new token.
-
-Create README.md at the same level as src folder
-
-https://github.com/gchandra10/rust-epoch-to-human-lib
+[Epoch to human](https://github.com/gchandra10/rust-epoch-to-human-lib)
 
 
 **Sample Libraries**
 
-https://crates.io/crates/epoch_to_human
+[Epoch to Human](https://crates.io/crates/epoch_to_human)
 
-https://crates.io/crates/hello_lib
+[Hello Lib](https://crates.io/crates/hello_lib)
 
-
+```
 // Cargo Commands
 
 cargo login <token>
