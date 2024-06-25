@@ -9,4 +9,4 @@
 * [Smart Pointers](smart-pointers.md)
 * [Log4j](log4j.md)
 * [Closures](closures.md)
-* [Map & Collect](map_collect.md)
+* [Map & Collect](map-collect.md)

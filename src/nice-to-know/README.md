@@ -11,3 +11,4 @@
 * [Multiple Rust Files](multiple-rs-files.md)
 * [Storage Formats](storage-format.md)
 * [RHAI](rhai.md)
+* [Concurrency & Parallelism](concurrency-parallelism.md)
