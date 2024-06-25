@@ -103,6 +103,7 @@
     * [Smart Pointers](chapter5/smart-pointers.md)
     * [Log4j](chapter5/log4j.md)
     * [Closures](chapter5/closures.md)
+    * [Map & Collect](chapter5/map_collect.md)
 
 ----
 * [Nice to know](nice-to-know/README.md)
@@ -116,5 +117,6 @@
     * [CI-CD](nice-to-know/ci-cd.md)
     * [Multiple Rust Files](nice-to-know/multiple-rs-files.md)
     * [Storage Formats](nice-to-know/storage-format.md)
+    * [RHAI](nice-to-know/rhai.md)
 
 * [References](references.md)

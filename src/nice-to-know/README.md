@@ -10,3 +10,4 @@
 * [CI-CD](ci-cd.md)
 * [Multiple Rust Files](multiple-rs-files.md)
 * [Storage Formats](storage-format.md)
+* [RHAI](rhai.md)
