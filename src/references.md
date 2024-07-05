@@ -1,12 +1,13 @@
 # References
-[Official 'Stable' Rust Book](https://www.rust-lang.org/learn)
 
-[Official 'UnStable' Rust Book](https://doc.rust-lang.org/nightly/unstable-book/index.html)
+- [Official 'Stable' Rust Book](https://www.rust-lang.org/learn)
 
-[Rust Fundamentals](https://www.udemy.com/course/rust-fundamentals/)
+- [Official 'UnStable' Rust Book](https://doc.rust-lang.org/nightly/unstable-book/index.html)
 
-[Udemy Course](https://www.udemy.com/course/rust-programming-language-complete-tutorial/)
+- [Rust Fundamentals](https://www.udemy.com/course/rust-fundamentals/)
 
-[Udemy Course 2](https://www.udemy.com/course/rust-lang/)
+- [Udemy Course](https://www.udemy.com/course/rust-programming-language-complete-tutorial/)
 
-[Stackoverflow Insights CSV](https://insights.stackoverflow.com/survey")
+- [Udemy Course 2](https://www.udemy.com/course/rust-lang/)
+
+- [Stackoverflow Insights CSV](https://insights.stackoverflow.com/survey")
